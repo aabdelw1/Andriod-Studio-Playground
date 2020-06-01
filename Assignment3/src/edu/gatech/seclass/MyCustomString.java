@@ -111,7 +111,7 @@ public class MyCustomString implements MyCustomStringInterface {
         System.out.println(startPosition);
         System.out.println(endPosition);
         System.out.println(string.length());
-        
+
         if( string.isEmpty()) {
             throw new IllegalArgumentException("String is undefined or empty");
         }
@@ -121,9 +121,13 @@ public class MyCustomString implements MyCustomStringInterface {
         if (startPosition > string.length()) {
             throw new IllegalArgumentException("positions cannot exceed length of string");
         }
-        if(endPosition > string.length()) {
-            throw new StringIndexOutOfBoundsException("End Position exceeds final position in string");
+        if (startPosition >= 1 && startPosition <= endPosition && string != null && endPosition > string.length()){
+            throw new MyIndexOutOfBoundsException("End Position must be less than string size");
+
         }
+//        if(endPosition > string.length()) {
+//            throw new StringIndexOutOfBoundsException("End Position exceeds final position in string");
+//        }
         if (startPosition > endPosition) {
             throw new MyIndexOutOfBoundsException("End Position must be greater than start");
         }
