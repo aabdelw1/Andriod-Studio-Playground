@@ -32,19 +32,35 @@ public class MyCustomString implements MyCustomStringInterface {
 
     @Override
     public int countNumbers() {
-        System.out.println(string);
-        String noPeriods = string.replaceAll("\\.", " ");
-        String newString = noPeriods.replaceAll("\\p{Punct}", "");
-        String[] splitString = newString.split(" ");
+//        System.out.println(string);
+//        String noPeriods = string.replaceAll("\\.", " ");
+//        String newString = noPeriods.replaceAll("\\p{Punct}", " ");
+//        System.out.println(newString);
+//
+//        String[] splitString = newString.split(" ");
+//        int counter = 0;
+//        for (String i : splitString) {
+//            try {
+//                Integer.parseInt(i);
+//            } catch (NumberFormatException e) {
+//                counter++;
+//            }
+//        }
+//        return splitString.length - counter;
         int counter = 0;
-        for (String i : splitString) {
-            try {
-                Integer.parseInt(i);
-            } catch (NumberFormatException e) {
-                counter++;
+        boolean check = false;
+
+        for (int j = 0; j < string.length(); j++) {
+            if (Character.isDigit(string.charAt(j))) {
+                if (!check) {
+                    counter++;
+                    check = true;
+                }
+            } else {
+                check = false;
             }
         }
-        return splitString.length - counter;
+        return counter;
     }
 
     @Override
@@ -101,9 +117,9 @@ public class MyCustomString implements MyCustomStringInterface {
         if (startPosition > string.length()) {
             throw new IllegalArgumentException("positions cannot exceed length of string");
         }
-        if(endPosition > string.length()) {
-            throw new IllegalArgumentException("End Position exceeds final position in string");
-        }
+//        if(endPosition > string.length()) {
+//            throw new IllegalArgumentException("End Position exceeds final position in string");
+//        }
         if (startPosition > endPosition) {
             throw new MyIndexOutOfBoundsException("End Position must be greater than start");
         }
