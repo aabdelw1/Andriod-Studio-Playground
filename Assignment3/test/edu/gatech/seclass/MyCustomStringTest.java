@@ -96,7 +96,7 @@ public class MyCustomStringTest {
         assertEquals("ONETWOEIGHTTHREESEVENFOURFIVENINESEVENONENINEZEROTWOEIGHTTHREESEVENFOURZEROONETWOTHREEFOUR", mycustomstring.getString());
     }
 
-    @Test(expected = MyIndexOutOfBoundsException.class)
+    @Test(expected = IllegalArgumentException.class)
     /*** name="[convertDigitsToNamesInSubstring] Test where we make it fail purposely", number="Student Test 10" ***/
     public void testConvertDigitsToNamesInSubstringS5() {
         mycustomstring.setString("");
