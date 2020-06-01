@@ -29,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/edu/gatech/seclass/MyCustomStringTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="1389">
               <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#432#433#0" expanded="true" />
@@ -42,13 +42,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/gatech/seclass/MyCustomString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+            <state relative-caret-position="231">
+              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,9 +193,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyCustomStringTest - 2020.05.31 at 21h 54m 13s.xml">
-      <configuration name="MyCustomStringTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyCustomStringTest - 2020.05.31 at 21h 55m 34s.xml">
       <configuration name="MyCustomStringTest" configurationId="JUnit" />
     </history-entry>
@@ -223,9 +220,12 @@
     <history-entry file="MyCustomStringTest - 2020.05.31 at 22h 07m 36s.xml">
       <configuration name="MyCustomStringTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyCustomStringTest - 2020.05.31 at 22h 37m 41s.xml">
+      <configuration name="MyCustomStringTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="758" y="0" width="922" height="1050" extended-state="6" />
+    <frame x="758" y="0" width="922" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -289,7 +289,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/edu/gatech/seclass/MyCustomStringTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="1389">
           <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="e#432#433#0" expanded="true" />
@@ -307,13 +307,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/gatech/seclass/MyCustomString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        <state relative-caret-position="231">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
           </folding>
         </state>
       </provider>

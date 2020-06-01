@@ -26,13 +26,13 @@ public class MyCustomString implements MyCustomStringInterface {
     public void setString(String string) {
         this.string = string;
     }
-
     public String getString() {
         return string;
     }
 
     @Override
     public int countNumbers() {
+        System.out.println(string);
         String noPeriods = string.replaceAll("\\.", " ");
         String newString = noPeriods.replaceAll("\\p{Punct}", "");
         String[] splitString = newString.split(" ");
@@ -102,7 +102,7 @@ public class MyCustomString implements MyCustomStringInterface {
             throw new IllegalArgumentException("positions cannot exceed length of string");
         }
         if(endPosition > string.length()) {
-            throw new IndexOutOfBoundsException("End Position exceeds final position in string");
+            throw new IllegalArgumentException("End Position exceeds final position in string");
         }
         if (startPosition > endPosition) {
             throw new MyIndexOutOfBoundsException("End Position must be greater than start");
