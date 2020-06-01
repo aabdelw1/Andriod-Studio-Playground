@@ -107,7 +107,11 @@ public class MyCustomString implements MyCustomStringInterface {
 
     @Override
     public void convertDigitsToNamesInSubstring(int startPosition, int endPosition) throws MyIndexOutOfBoundsException,
-            IllegalArgumentException {
+            IllegalArgumentException, StringIndexOutOfBoundsException {
+        System.out.println(startPosition);
+        System.out.println(endPosition);
+        System.out.println(string.length());
+        
         if( string.isEmpty()) {
             throw new IllegalArgumentException("String is undefined or empty");
         }
