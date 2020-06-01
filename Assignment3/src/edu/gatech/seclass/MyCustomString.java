@@ -103,7 +103,6 @@ public class MyCustomString implements MyCustomStringInterface {
 
         String subStringy = string.substring(startPosition - 1, endPosition);
 
-        subStringy = subStringy.replaceAll("10", "TEN");
         subStringy = subStringy.replaceAll("0", "ZERO");
         subStringy = subStringy.replaceAll("1", "ONE");
         subStringy = subStringy.replaceAll("2", "TWO");
@@ -114,6 +113,7 @@ public class MyCustomString implements MyCustomStringInterface {
         subStringy = subStringy.replaceAll("7", "SEVEN");
         subStringy = subStringy.replaceAll("8", "EIGHT");
         subStringy = subStringy.replaceAll("9", "NINE");
+        subStringy = subStringy.replaceAll("10", "TEN");
 
 
         string = string.substring(0, startPosition - 1) + subStringy
