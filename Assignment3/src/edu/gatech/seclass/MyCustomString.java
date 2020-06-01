@@ -92,14 +92,17 @@ public class MyCustomString implements MyCustomStringInterface {
     @Override
     public void convertDigitsToNamesInSubstring(int startPosition, int endPosition) throws MyIndexOutOfBoundsException,
             IllegalArgumentException {
-        if (string == null || string.isEmpty()) {
+        if( string.isEmpty()) {
             throw new IllegalArgumentException("String is undefined or empty");
         }
         if (startPosition < 1 || endPosition < 1) {
             throw new IllegalArgumentException("Start and end postion must be greater than 1");
         }
-        if (startPosition > string.length() || endPosition > string.length()) {
+        if (startPosition > string.length()) {
             throw new IllegalArgumentException("positions cannot exceed length of string");
+        }
+        if(endPosition > string.length()) {
+            throw new IndexOutOfBoundsException("End Position exceeds final position in string")
         }
         if (startPosition > endPosition) {
             throw new MyIndexOutOfBoundsException("End Position must be greater than start");
