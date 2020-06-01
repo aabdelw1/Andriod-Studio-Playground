@@ -102,7 +102,7 @@ public class MyCustomString implements MyCustomStringInterface {
             throw new IllegalArgumentException("positions cannot exceed length of string");
         }
         if(endPosition > string.length()) {
-            throw new IndexOutOfBoundsException("End Position exceeds final position in string")
+            throw new IndexOutOfBoundsException("End Position exceeds final position in string");
         }
         if (startPosition > endPosition) {
             throw new MyIndexOutOfBoundsException("End Position must be greater than start");
