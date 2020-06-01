@@ -49,6 +49,10 @@ public class MyCustomString implements MyCustomStringInterface {
 
     @Override
     public String addNumber(int n, boolean reverse) {
+
+        if (n < 0) {
+            throw new IllegalArgumentException("Negative illegal argument");
+        }
 //        String newString = string.replaceAll("\\p{Punct}", "");
         String[] splitString = string.split(" ");
         String[] newArray = new String[splitString.length];
@@ -89,16 +93,16 @@ public class MyCustomString implements MyCustomStringInterface {
     public void convertDigitsToNamesInSubstring(int startPosition, int endPosition) throws MyIndexOutOfBoundsException,
             IllegalArgumentException {
         if (string == null || string.isEmpty()) {
-            throw new MyIndexOutOfBoundsException("String is undefined or empty");
+            throw new IllegalArgumentException("String is undefined or empty");
         }
         if (startPosition < 1 || endPosition < 1) {
-            throw new MyIndexOutOfBoundsException("Start and end postion must be greater than 1");
+            throw new IllegalArgumentException("Start and end postion must be greater than 1");
         }
         if (startPosition > string.length() || endPosition > string.length()) {
-            throw new MyIndexOutOfBoundsException("positions cannot exceed length of string");
+            throw new IllegalArgumentException("positions cannot exceed length of string");
         }
         if (startPosition > endPosition) {
-            throw new IllegalArgumentException("End Position must be greater than start");
+            throw new MyIndexOutOfBoundsException("End Position must be greater than start");
         }
 
         String subStringy = string.substring(startPosition - 1, endPosition);
