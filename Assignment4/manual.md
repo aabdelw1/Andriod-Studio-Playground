@@ -1,4 +1,4 @@
-# **Manual for SDP Encryptor**
+# **Manual for SDPEncryptor**
 
 ## App Details
 
@@ -12,7 +12,7 @@ Course: SDP6300Summer2020
 1. Introduction  
 1.1 Purpoe and Scope
 1.2 Process Overview
-2. Starting and Using Distance Converter  
+2. Starting and Using SDPEncryptor 
 2.1 Starting the app  
 2.2 Using the app
 3. Quick Reference
@@ -27,14 +27,14 @@ This Encryptor is a an andriod app developed to encrypt text based messages usin
 
 The Encryptor is packaged as an Andriod Studio project and can only run on Android based Os's. To import, you must use Android Studio
 
-## 2 Starting and Using Distance Converter
+## 2 Starting and Using SDPEncryptor
 
-### 2.1 Starting app
+### 2.1 Starting the app
 
 After launching the Encryptor app in Andriod Studo, use the built in Andriod emulator or a connected Android device to run the app.
 For best performance refrain from using anything besdies Pixel 3 API 28 (Pie).
 
-### 2.2 Using app
+### 2.2 Using the app
 
 After you build successfull and the app runs, you will see the app interface is presented in the emulator or your device screen.
 
