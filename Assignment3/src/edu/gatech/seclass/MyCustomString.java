@@ -65,7 +65,7 @@ public class MyCustomString implements MyCustomStringInterface {
 
     @Override
     public String addNumber(int n, boolean reverse) {
-
+        
         System.out.println(string);
         if (n < 0) {
             throw new IllegalArgumentException("Negative illegal argument");
