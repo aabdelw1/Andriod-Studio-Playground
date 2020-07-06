@@ -39,7 +39,7 @@ public class BuggyClass {
     public static void buggyMethod1() {
 
         // NOT POSSIBLE: This method cannot be implemented because
-        // The second condition stating,  "to create a test suite that achieves 100% branch coverage 
+        // the second condition stating,  "to create a test suite that achieves 100% branch coverage 
         // and does not reveal the fault" is an impossible expression. Branch coverage is more 
         // extensive than statement coverage. That being said, if a testing suite can acheive 100% 
         // statement coverage, then it will also acheive 100% branch coverage 
@@ -48,10 +48,10 @@ public class BuggyClass {
     public static void buggyMethod2() { 
 
         // NOT POSSIBLE: This method cannot be implemented because
-        // Similarly to the first the second condition has a flaw such that an implied else statement
-        // would be missed by statement coverage where it would be covered by branch
+        // Similarly to the first buggyMethod, the second condition has a flaw such that an implied else statement
+        // would be missed by statement coverage where it would be covered by branch.
         // So since branch is more extensive than statement coverage, if 100% branch coverage missed the fault
-        // then it is liekely that 100% statement coverage will miss it as well
+        // then it is liekely that 100% statement coverage will miss it as well.
 
     }
 
