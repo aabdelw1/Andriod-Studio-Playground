@@ -1,5 +1,7 @@
 package edu.gatech.seclass;
 
+import javax.sound.midi.SysexMessage;
+
 /**
  * This is a Georgia Tech provided code example for use in assigned
  * private GT repositories. Students and other users of this template
@@ -34,19 +36,36 @@ public class BuggyClass {
         // method that is not possible) ***/
     }
 
-    public static void buggyMethod1() { // Change the signature as needed
-        // Either add a comment in the format provided above or
-        // implement the method.
+    public static void buggyMethod1() {
+
+        // NOT POSSIBLE: This method cannot be implemented because
+        // The second condition stating,  "to create a test suite that achieves 100% branch coverage 
+        // and does not reveal the fault" is an impossible expression. Branch coverage is more 
+        // extensive than statement coverage. That being said, if a testing suite can acheive 100% 
+        // statement coverage, then it will also acheive 100% branch coverage 
     }
 
-    public static void buggyMethod2() { // Change the signature as needed
-        // Either add a comment in the format provided above or
-        // implement the method.
+    public static void buggyMethod2() { 
+
+        // NOT POSSIBLE: This method cannot be implemented because
+        // Similarly The second condition stating,  "to create a test suite that achieves 100% branch coverage 
+        // and does not reveal the fault" is an impossible enterprise. Branch coverage is more 
+        // extensive than statement coverage. That being said, if a testing suite can acheive 100% 
+        // statement coverage, then it will also acheive 100% branch coverage 
+
     }
 
-    public static void buggyMethod3() { // Change the signature as needed
-        // Either add a comment in the format provided above or
-        // implement the method.
+    public static String buggyMethod3(int a, int b) { 
+        int sum = a + b;
+        String color = "";
+        if(sum > 0){
+            color = "red";
+        } else if (sum < 0){
+            color = "blue";
+        } else {}
+        
+        return color;
+
     }
 
     public static void buggyMethod4() { // Change the signature as needed
@@ -56,21 +75,21 @@ public class BuggyClass {
 
     public static String[] buggyMethod5() {
         String a[] = new String[7];
-        /*
-        public static boolean providedBuggyMethod (boolean a, boolean b) {
-            int x = 2;
-            int y = 4;
-            if(a)
-                x = y * x;
-            else
-                x = 2*x;
-            if(b)
-                y -= x;
-            else
-                y -= 4;
-            return ((x/y)>= 0);
-        }
-        */
+        
+        //  public static boolean providedBuggyMethod (boolean a, boolean b) {
+        //     int x = 2;
+        //     int y = 4;
+        //     if(a)
+        //         x = y * x;
+        //     else
+        //         x = 2*x;
+        //     if(b)
+        //         y -= x;
+        //     else
+        //         y -= 4;
+        //     return ((x/y)>= 0)
+        // }
+        
         //
         // Replace the "?" in column "output" with "T", "F", or "E":
         //
