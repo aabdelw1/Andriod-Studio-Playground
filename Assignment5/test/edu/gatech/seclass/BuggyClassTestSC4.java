@@ -18,15 +18,15 @@ import static org.junit.Assert.assertEquals;
  * similar test classes when required.
  */
 
-public class BuggyClassTestSC3 {
+public class BuggyClassTestSC4 {
 
     @Test
     public void Test1() {
-        BuggyClass.buggyMethod3(3, 9);
+        BuggyClass.buggyMethod4(1, true, true, true);
     }
 
     @Test
     public void Test2() {
-        BuggyClass.buggyMethod3(-5, -8);
+        BuggyClass.buggyMethod4(1, false, false, false);
     }
 }

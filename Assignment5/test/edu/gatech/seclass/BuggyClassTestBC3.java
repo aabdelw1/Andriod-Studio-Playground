@@ -18,7 +18,8 @@ import static org.junit.Assert.assertEquals;
  * similar test classes when required.
  */
 
-public class BuggyClassTestSC3 {
+public class BuggyClassTestBC3 {
+
 
     @Test
     public void Test1() {
@@ -28,5 +29,9 @@ public class BuggyClassTestSC3 {
     @Test
     public void Test2() {
         BuggyClass.buggyMethod3(-5, -8);
+    }
+    @Test
+    public void Test3() {
+        BuggyClass.buggyMethod3(-1, 1);
     }
 }

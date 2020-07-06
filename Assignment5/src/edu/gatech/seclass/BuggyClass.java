@@ -48,10 +48,10 @@ public class BuggyClass {
     public static void buggyMethod2() { 
 
         // NOT POSSIBLE: This method cannot be implemented because
-        // Similarly The second condition stating,  "to create a test suite that achieves 100% branch coverage 
-        // and does not reveal the fault" is an impossible enterprise. Branch coverage is more 
-        // extensive than statement coverage. That being said, if a testing suite can acheive 100% 
-        // statement coverage, then it will also acheive 100% branch coverage 
+        // Similarly to the first the second condition has a flaw such that an implied else statement
+        // would be missed by statement coverage where it would be covered by branch
+        // So since branch is more extensive than statement coverage, if 100% branch coverage missed the fault
+        // then it is liekely that 100% statement coverage will miss it as well
 
     }
 
@@ -68,9 +68,21 @@ public class BuggyClass {
 
     }
 
-    public static void buggyMethod4() { // Change the signature as needed
-        // Either add a comment in the format provided above or
-        // implement the method.
+    public static int buggyMethod4(int a, boolean c1, boolean c2, boolean c3) { 
+        int x = a;
+        int y = 0;
+
+        if(c1 == true){
+            x = x + 1;
+        }
+        if(c2 == true){
+            x = x - 1;
+        }
+        if(c3 == true){
+            y = x;
+        }
+    
+        return x/y;
     }
 
     public static String[] buggyMethod5() {
@@ -95,20 +107,20 @@ public class BuggyClass {
         //
         //         | a | b |output|
         //         ================
-        a[0] =  /* | T | T | <T, F, or E> (e.g., "T") */ "?";
-        a[1] =  /* | T | F | <T, F, or E> (e.g., "T") */ "?";
-        a[2] =  /* | F | T | <T, F, or E> (e.g., "T") */ "?";
-        a[3] =  /* | F | F | <T, F, or E> (e.g., "T") */ "?";
+        a[0] =  /* | T | T | <T, F, or E> (e.g., "T") */ "F";
+        a[1] =  /* | T | F | <T, F, or E> (e.g., "T") */ "E";
+        a[2] =  /* | F | T | <T, F, or E> (e.g., "T") */ "E";
+        a[3] =  /* | F | F | <T, F, or E> (e.g., "T") */ "E";
         // ================
         //
         // Replace the "?" in the following sentences with "NEVER",
         // "SOMETIMES" or "ALWAYS":
         //
-        a[4] = /* Test suites with 100% statement coverage */ "?";
+        a[4] = /* Test suites with 100% statement coverage */ "ALWAYS";
                /*reveal the fault in this method.*/
-        a[5] = /* Test suites with 100% branch coverage */ "?";
+        a[5] = /* Test suites with 100% branch coverage */ "ALWAYS";
                /*reveal the fault in this method.*/
-        a[6] =  /* Test suites with 100% path coverage */ "?";
+        a[6] =  /* Test suites with 100% path coverage */ "ALWAYS";
                 /*reveal the fault in this method.*/
         // ================
         return a;
