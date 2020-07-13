@@ -15,9 +15,10 @@ Number of Lines:
   One.         [single][property oneLine]
   Many.         
 
-Line of only non-alphanumerics: # (-s)
-  Yes.          [if !emptyfile][property nonAlphanumeric]
-  No.           [if !emptyfile] 
+Lines of only non-alphanumerics: # (-s)
+  None.          [single][if !emptyfile]
+  One.           [if !emptyfile][property nonAlphanumeric]
+  Many.          [if !emptyfile][property nonAlphanumeric]
 
 Ignore Line when sorting: # (-s)
   Yes.        [if !emptyfile && nonAlphanumeric && oneLine && !doNothing]
@@ -30,7 +31,7 @@ Length of string to keep/remove: # (-r | -k)
 
 Keep/Remove string?: # (-r | -k)
   Yes.          [if !noString && !emptyfile && !doNothing]
-  No.           [if thereIsString]
+  No.           [if thereIsString && !emptyfile && !doNothing]
 
 Valid integer field input: (-t)
   Empty.      [single][property makeIntegerOne]

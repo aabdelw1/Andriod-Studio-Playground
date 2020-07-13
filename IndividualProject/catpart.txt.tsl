@@ -16,26 +16,30 @@ Test Case 4  		<single>
 
 
 Test Case 5  		<single>
-   Valid integer field input :  Empty
+   Lines of only non-alphanumerics :  None
 
 
 Test Case 6  		<single>
+   Valid integer field input :  Empty
+
+
+Test Case 7  		<single>
    Valid integer field input :  0
 
 
-Test Case 7  		<error>
+Test Case 8  		<error>
    Valid integer field input :  <0
 
 
-Test Case 8  		<error>
+Test Case 9  		<error>
    Presence of a file corresponding to the name :  Not present
 
 
-Test Case 9  		(Key = 2.2.3.1.2.1.0.3.1.1.2.)
+Test Case 10 		(Key = 2.2.3.2.2.1.0.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -45,11 +49,11 @@ Test Case 9  		(Key = 2.2.3.1.2.1.0.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 10 		(Key = 2.2.3.1.2.1.0.3.1.2.2.)
+Test Case 11 		(Key = 2.2.3.2.2.1.0.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -59,11 +63,11 @@ Test Case 10 		(Key = 2.2.3.1.2.1.0.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 11 		(Key = 2.2.3.1.2.2.1.3.1.1.2.)
+Test Case 12 		(Key = 2.2.3.2.2.2.1.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -73,11 +77,11 @@ Test Case 11 		(Key = 2.2.3.1.2.2.1.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 12 		(Key = 2.2.3.1.2.2.1.3.1.2.2.)
+Test Case 13 		(Key = 2.2.3.2.2.2.1.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -87,11 +91,11 @@ Test Case 12 		(Key = 2.2.3.1.2.2.1.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 13 		(Key = 2.2.3.1.2.2.2.3.1.1.2.)
+Test Case 14 		(Key = 2.2.3.2.2.2.2.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -101,11 +105,11 @@ Test Case 13 		(Key = 2.2.3.1.2.2.2.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 14 		(Key = 2.2.3.1.2.2.2.3.1.2.2.)
+Test Case 15 		(Key = 2.2.3.2.2.2.2.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -115,11 +119,11 @@ Test Case 14 		(Key = 2.2.3.1.2.2.2.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 15 		(Key = 2.2.3.2.2.1.0.3.1.1.2.)
+Test Case 16 		(Key = 2.2.3.3.2.1.0.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -129,11 +133,11 @@ Test Case 15 		(Key = 2.2.3.2.2.1.0.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 16 		(Key = 2.2.3.2.2.1.0.3.1.2.2.)
+Test Case 17 		(Key = 2.2.3.3.2.1.0.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -143,11 +147,11 @@ Test Case 16 		(Key = 2.2.3.2.2.1.0.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 17 		(Key = 2.2.3.2.2.2.1.3.1.1.2.)
+Test Case 18 		(Key = 2.2.3.3.2.2.1.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -157,11 +161,11 @@ Test Case 17 		(Key = 2.2.3.2.2.2.1.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 18 		(Key = 2.2.3.2.2.2.1.3.1.2.2.)
+Test Case 19 		(Key = 2.2.3.3.2.2.1.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -171,11 +175,11 @@ Test Case 18 		(Key = 2.2.3.2.2.2.1.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 19 		(Key = 2.2.3.2.2.2.2.3.1.1.2.)
+Test Case 20 		(Key = 2.2.3.3.2.2.2.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -185,11 +189,11 @@ Test Case 19 		(Key = 2.2.3.2.2.2.2.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 20 		(Key = 2.2.3.2.2.2.2.3.1.2.2.)
+Test Case 21 		(Key = 2.2.3.3.2.2.2.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  One
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -199,11 +203,11 @@ Test Case 20 		(Key = 2.2.3.2.2.2.2.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 21 		(Key = 2.3.3.1.2.1.0.3.1.1.2.)
+Test Case 22 		(Key = 2.3.3.2.2.1.0.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -213,11 +217,11 @@ Test Case 21 		(Key = 2.3.3.1.2.1.0.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 22 		(Key = 2.3.3.1.2.1.0.3.1.2.2.)
+Test Case 23 		(Key = 2.3.3.2.2.1.0.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -227,11 +231,11 @@ Test Case 22 		(Key = 2.3.3.1.2.1.0.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 23 		(Key = 2.3.3.1.2.2.1.3.1.1.2.)
+Test Case 24 		(Key = 2.3.3.2.2.2.1.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -241,11 +245,11 @@ Test Case 23 		(Key = 2.3.3.1.2.2.1.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 24 		(Key = 2.3.3.1.2.2.1.3.1.2.2.)
+Test Case 25 		(Key = 2.3.3.2.2.2.1.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -255,11 +259,11 @@ Test Case 24 		(Key = 2.3.3.1.2.2.1.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 25 		(Key = 2.3.3.1.2.2.2.3.1.1.2.)
+Test Case 26 		(Key = 2.3.3.2.2.2.2.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -269,11 +273,11 @@ Test Case 25 		(Key = 2.3.3.1.2.2.2.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 26 		(Key = 2.3.3.1.2.2.2.3.1.2.2.)
+Test Case 27 		(Key = 2.3.3.2.2.2.2.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  Yes
+   Lines of only non-alphanumerics              :  One
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -283,11 +287,11 @@ Test Case 26 		(Key = 2.3.3.1.2.2.2.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 27 		(Key = 2.3.3.2.2.1.0.3.1.1.2.)
+Test Case 28 		(Key = 2.3.3.3.2.1.0.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -297,11 +301,11 @@ Test Case 27 		(Key = 2.3.3.2.2.1.0.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 28 		(Key = 2.3.3.2.2.1.0.3.1.2.2.)
+Test Case 29 		(Key = 2.3.3.3.2.1.0.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Empty
    Keep/Remove string?                          :  <n/a>
@@ -311,11 +315,11 @@ Test Case 28 		(Key = 2.3.3.2.2.1.0.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 29 		(Key = 2.3.3.2.2.2.1.3.1.1.2.)
+Test Case 30 		(Key = 2.3.3.3.2.2.1.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -325,11 +329,11 @@ Test Case 29 		(Key = 2.3.3.2.2.2.1.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 30 		(Key = 2.3.3.2.2.2.1.3.1.2.2.)
+Test Case 31 		(Key = 2.3.3.3.2.2.1.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  Yes
@@ -339,11 +343,11 @@ Test Case 30 		(Key = 2.3.3.2.2.2.1.3.1.2.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 31 		(Key = 2.3.3.2.2.2.2.3.1.1.2.)
+Test Case 32 		(Key = 2.3.3.3.2.2.2.3.1.1.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
@@ -353,11 +357,11 @@ Test Case 31 		(Key = 2.3.3.2.2.2.2.3.1.1.2.)
    Presence of a file corresponding to the name :  Present
 
 
-Test Case 32 		(Key = 2.3.3.2.2.2.2.3.1.2.2.)
+Test Case 33 		(Key = 2.3.3.3.2.2.2.3.1.2.2.)
    Size                                         :  Not empty
    Number of Options                            :  Many
    Number of Lines                              :  Many
-   Line of only non-alphanumerics               :  No
+   Lines of only non-alphanumerics              :  Many
    Ignore Line when sorting                     :  No
    Length of string to keep/remove              :  Not Empty
    Keep/Remove string?                          :  No
