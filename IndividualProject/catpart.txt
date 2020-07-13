@@ -1,0 +1,53 @@
+# File
+
+Size:
+	Empty.				[single][property emptyfile]
+	Not empty.
+
+#Parameters
+Number of Options:
+  None.        [single][property doNothing]
+  One.         
+  Many.
+
+Number of Lines:
+  None.        [single][property emptyfile]
+  One.         [single][property oneLine]
+  Many.         
+
+Line of only non-alphanumerics: # (-s)
+  Yes.          [if !emptyfile][property nonAlphanumeric]
+  No.           [if !emptyfile] 
+
+Ignore Line when sorting: # (-s)
+  Yes.        [if !emptyfile && nonAlphanumeric && oneLine && !doNothing]
+  No.         [if !emptyfile && !oneLine  && !doNothing]
+
+
+Length of string to keep/remove: # (-r | -k)
+  Empty.        [property noString]
+  Not Empty.    [property thereIsString]
+
+Keep/Remove string?: # (-r | -k)
+  Yes.          [if !noString && !emptyfile && !doNothing]
+  No.           [if thereIsString]
+
+Valid integer field input: (-t)
+  Empty.      [single][property makeIntegerOne]
+	0.					[single][property noInteger]
+	>0.					[property posInt]
+	<0.			    [error]
+
+Slice?: # (-t)
+  Yes.      [if !doNothing && !emptyfile && posInt]
+  No.       [if noInteger]
+
+
+Show line number:
+  Yes.        [if !emptyfile && !doNothing]
+  No. 
+
+# Filename
+Presence of a file corresponding to the name:
+	Not present.		[error]
+	Present.	
