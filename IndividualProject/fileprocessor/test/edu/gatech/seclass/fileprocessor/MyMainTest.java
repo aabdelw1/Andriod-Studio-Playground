@@ -179,7 +179,7 @@ public class MyMainTest {
         String args[] = {inputFile1.getPath()};
         Main.main(args);
 
-        String expected1 = "Hello Hello";
+        String expected1 = "Hello Hello" + System.lineSeparator();;
 
         String actual1 = getFileContent(inputFile1.getPath());
 
