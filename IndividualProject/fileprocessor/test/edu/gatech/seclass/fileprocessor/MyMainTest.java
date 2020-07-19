@@ -432,8 +432,7 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-k", "je", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "" + System.lineSeparator() + 
-          "" + System.lineSeparator();
+          String expected1 = "" + System.lineSeparator();
   
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -449,8 +448,7 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-k", "je", "-l", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "1" + System.lineSeparator() + 
-          "2" + System.lineSeparator();
+          String expected1 = "" + System.lineSeparator();
   
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
