@@ -262,11 +262,12 @@ public class MyMainTest {
      @Test
      public void  fileprocessorTest9() throws Exception {
          File inputFile1 = createInputFile(FILE1);
- 
+        try {
          String args[] = {"-t", "1"};
          Main.main(args);
-
+        } catch(Exception e) {
          assertEquals("Usage: filesummary [-s] [-r string | -k string] [-t [integer]] [-l] <filename>", errStream.toString().trim());
+        }
      }
 
      // Frame 10: Test Case 10 		(Key = 2.2.3.2.2.1.0.3.1.1.2.)
