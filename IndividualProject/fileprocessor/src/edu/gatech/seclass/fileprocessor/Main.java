@@ -7,8 +7,10 @@ Empty Main class for compiling Assignment 6.
 DO NOT ALTER THIS CLASS or implement it.
  */
 
-    public static void main(String[] args) {
+    public static String main(String[] args) {
         // Empty Skeleton Method
+
+        return "Hello There";
     }
 
     private static void usage() {
