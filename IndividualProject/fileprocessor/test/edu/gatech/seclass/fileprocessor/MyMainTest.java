@@ -490,13 +490,13 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-s", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "A" + System.lineSeparator() +
+          String expected1 = "-" + System.lineSeparator() +
+          "#" + System.lineSeparator() +
+          "A" + System.lineSeparator() +
+          "@" + System.lineSeparator() +
           "H" + System.lineSeparator() +
           "N" + System.lineSeparator() +
-          "h" + System.lineSeparator() +
-          "@" + System.lineSeparator() +
-          "#" + System.lineSeparator() +
-          "-" + System.lineSeparator();
+          "h" + System.lineSeparator();
 
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -538,13 +538,14 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-s", "-l", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "1 A" + System.lineSeparator() +
-          "2 H" + System.lineSeparator() +
-          "3 N" + System.lineSeparator() +
-          "4 h" + System.lineSeparator() +
-          "5 @" + System.lineSeparator() +
-          "6 #" + System.lineSeparator() +
-          "7 -" + System.lineSeparator();
+          String expected1 = "1 -" + System.lineSeparator() +
+          "2 #" + System.lineSeparator() +
+          "3 A" + System.lineSeparator() +
+          "4 @" + System.lineSeparator() +
+          "5 H" + System.lineSeparator() +
+          "6 N" + System.lineSeparator() +
+          "7 h" + System.lineSeparator();
+
 
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -558,7 +559,13 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-s", "je", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "";
+          String expected1 =  "Hello Hello" + System.lineSeparator() +
+          "Ammar Abdelwahed" + System.lineSeparator() +
+          "Natalie" + System.lineSeparator() +
+          "@#$% Ammer Hammer" + System.lineSeparator() +
+          "#%Albert Einstein" + System.lineSeparator() +
+          "--’’--9111234" + System.lineSeparator() +
+          "hello there again" + System.lineSeparator();
   
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -590,8 +597,8 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-s", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "1 -" + System.lineSeparator() +
-          "2 -" + System.lineSeparator();
+          String expected1 = "-" + System.lineSeparator() +
+          "-" + System.lineSeparator();
 
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -628,13 +635,16 @@ public class MyMainTest {
 
       // Frame 32: Test Case 32 		(Key = 2.3.3.3.2.2.2.3.1.1.2.)
       @Test
-      public void  fileprocessorTest32() throws Exception {
+      public void  fileprocessorTest32() throws Exception { 
           File inputFile1 = createInputFile(FILE5);
 
           String args[] = {"-t", "1", "-s", "jello", "-l", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "";
+          String expected1 = "--’’--9111234" + System.lineSeparator() +
+          "--’’--9111234" + System.lineSeparator();
+
+
   
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
@@ -648,7 +658,10 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-s", "jello", inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "";
+          String expected1 = "--’’--9111234" + System.lineSeparator() +
+          "--’’--9111234" + System.lineSeparator();
+
+
   
           String actual1 = getFileContent(inputFile1.getPath());
           assertEquals("The files differ!", expected1, actual1);
