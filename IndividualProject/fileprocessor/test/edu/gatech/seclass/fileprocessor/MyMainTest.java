@@ -367,6 +367,9 @@ public class MyMainTest {
 
           String args[] = {"-t", "1", "hello",inputFile1.getPath()};
           Main.main(args);
+
+          assertEquals("Usage: filesummary [-s] [-r string | -k string] [-t [integer]] [-l] <filename>", errStream.toString().trim());
+
       }
 
 
@@ -375,8 +378,15 @@ public class MyMainTest {
       public void  fileprocessorTest16() throws Exception {
           File inputFile1 = createInputFile(FILE5);
   
-          String args[] = {"-t", "1",inputFile1.getPath()};
+          String args[] = {"-t", "1", "-l",inputFile1.getPath()};
           Main.main(args);
+
+          String expected1 = "1 -" + System.lineSeparator() + 
+          "2 -" + System.lineSeparator();
+  
+          String actual1 = getFileContent(inputFile1.getPath());
+          assertEquals("The files differ!", expected1, actual1);
+
       }
 
 
@@ -385,8 +395,15 @@ public class MyMainTest {
       public void  fileprocessorTest17() throws Exception {
           File inputFile1 = createInputFile(FILE5);
   
-          String args[] = {"-t", "1",inputFile1.getPath()};
+          String args[] = {"-t", "1", inputFile1.getPath()};
           Main.main(args);
+
+          String expected1 = "-" + System.lineSeparator() + 
+          "-" + System.lineSeparator();
+  
+          String actual1 = getFileContent(inputFile1.getPath());
+          assertEquals("The files differ!", expected1, actual1);
+
       }
 
 
@@ -397,6 +414,13 @@ public class MyMainTest {
   
           String args[] = {"-t", "1", "-l", inputFile1.getPath()};
           Main.main(args);
+
+          String expected1 = "1 -" + System.lineSeparator() + 
+          "2 -" + System.lineSeparator();
+  
+          String actual1 = getFileContent(inputFile1.getPath());
+          assertEquals("The files differ!", expected1, actual1);
+
       }
 
 
@@ -407,6 +431,14 @@ public class MyMainTest {
   
           String args[] = {"-t", "1", "-k", "je", inputFile1.getPath()};
           Main.main(args);
+
+          String expected1 = "" + System.lineSeparator() + 
+          "" + System.lineSeparator();
+  
+          String actual1 = getFileContent(inputFile1.getPath());
+          assertEquals("The files differ!", expected1, actual1);
+
+
       }
 
       // Frame 20: Test Case 20 		(Key = 2.2.3.3.2.2.2.3.1.1.2.)
@@ -416,6 +448,12 @@ public class MyMainTest {
   
           String args[] = {"-t", "1", "-k", "je", "-l", inputFile1.getPath()};
           Main.main(args);
+
+          String expected1 = "1" + System.lineSeparator() + 
+          "2" + System.lineSeparator();
+  
+          String actual1 = getFileContent(inputFile1.getPath());
+          assertEquals("The files differ!", expected1, actual1);
       }
 
       // Frame 21: Test Case 21 		(Key = 2.2.3.3.2.2.2.3.1.2.2.)
