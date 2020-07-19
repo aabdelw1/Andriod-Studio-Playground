@@ -253,6 +253,7 @@ public class MyMainTest {
          String args[] = {"-t", "-1", inputFile1.getPath()};
          Main.main(args);
  
+         assertEquals("Usage: filesummary [-s] [-r string | -k string] [-t [integer]] [-l] <filename>", errStream.toString().trim());
       
      }
 
@@ -264,6 +265,8 @@ public class MyMainTest {
  
          String args[] = {"-t", "1"};
          Main.main(args);
+
+         assertEquals("Usage: filesummary [-s] [-r string | -k string] [-t [integer]] [-l] <filename>", errStream.toString().trim());
      }
 
      // Frame 10: Test Case 10 		(Key = 2.2.3.2.2.1.0.3.1.1.2.)
@@ -347,6 +350,12 @@ public class MyMainTest {
   
           String args[] = {"-t", "1", "hello", "-l" ,inputFile1.getPath()};
           Main.main(args);
+
+
+          String actual1 = getFileContent(inputFile1.getPath());
+
+          assertEquals("Usage: filesummary [-s] [-r string | -k string] [-t [integer]] [-l] <filename>", errStream.toString().trim());
+
       }
 
 
