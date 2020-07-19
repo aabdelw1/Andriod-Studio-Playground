@@ -100,7 +100,7 @@ public class MyMainTest {
   private static final String FILE2 = "";
 
   //One Liner
-  private static final String FILE3 = "Hello Hello";
+  private static final String FILE3 = "Hello Hello" + System.lineSeparator();;
 
 
   //All alphanumerics only
