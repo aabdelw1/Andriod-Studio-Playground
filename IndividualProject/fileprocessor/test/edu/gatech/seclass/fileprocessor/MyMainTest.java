@@ -145,7 +145,7 @@ public class MyMainTest {
     public void  fileprocessorTest2() throws Exception {
         File inputFile1 = createInputFile(FILE3);
 
-        String args[] = {inputFile1.getPath()};
+        String args[] = {"" ,inputFile1.getPath()};
         Main.main(args);
 
         String expected1 = "";
@@ -231,13 +231,13 @@ public class MyMainTest {
         String args[] = {"-t", "0", inputFile1.getPath()};
         Main.main(args);
 
-        String expected1 = "" + System.lineSeparator() +
-        "" + System.lineSeparator() +
-        "" + System.lineSeparator() +
-        "" + System.lineSeparator() +
-        "" + System.lineSeparator() +
-        "" + System.lineSeparator() +
-        "" + System.lineSeparator();
+        String expected1 =  "Hello Hello" + System.lineSeparator() +
+        "Ammar Abdelwahed" + System.lineSeparator() +
+        "Natalie" + System.lineSeparator() +
+        "@#$% Ammer Hammer" + System.lineSeparator() +
+        "#%Albert Einstein" + System.lineSeparator() +
+        "--’’--9111234" + System.lineSeparator() +
+        "hello there again" + System.lineSeparator();
 
         String actual1 = getFileContent(inputFile1.getPath());
 
@@ -317,13 +317,7 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-l", "-k", "hello",inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "1 H" + System.lineSeparator() +
-          "2 A" + System.lineSeparator() +
-          "3 N" + System.lineSeparator() +
-          "4 @" + System.lineSeparator() +
-          "5 #" + System.lineSeparator() +
-          "6 -" + System.lineSeparator() +
-          "7 h" + System.lineSeparator();
+          String expected1 = "1 h" + System.lineSeparator();
   
           String actual1 = getFileContent(inputFile1.getPath());
   
@@ -338,13 +332,7 @@ public class MyMainTest {
           String args[] = {"-t", "1", "-k", "hello",inputFile1.getPath()};
           Main.main(args);
 
-          String expected1 = "H" + System.lineSeparator() +
-          "A" + System.lineSeparator() +
-          "N" + System.lineSeparator() +
-          "@" + System.lineSeparator() +
-          "#" + System.lineSeparator() +
-          "-" + System.lineSeparator() +
-          "h" + System.lineSeparator();
+          String expected1 = "h" + System.lineSeparator();
   
           String actual1 = getFileContent(inputFile1.getPath());
   
