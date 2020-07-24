@@ -14,8 +14,8 @@ public class FileProcessor implements FileProcessorInterface {
   private static String filepath;
   private static boolean sort;
   private static boolean list;
-  private static String keep;
-  private static String remove;
+  private static String keep = "";
+  private static String remove = "";
   private static int trim; 
   private Charset charset = StandardCharsets.UTF_8;
 
