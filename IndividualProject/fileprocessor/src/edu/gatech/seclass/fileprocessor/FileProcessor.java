@@ -182,8 +182,25 @@ public class FileProcessor implements FileProcessorInterface {
         output = output + line + System.lineSeparator();
     }
 
+    try {
+        writeOutput(output);
+        
+    } catch(Exception e) {
+        e.printStackTrace();
+    }
 
-    File file = writeOutput(output);
+    
+    // try {
+    //     FileWriter f = new FileWriter(filepath);
+    //      f.write(output);   
+    // } catch(ProcessingException e) {
+    //     e.printStackTrace();
+    // } finally {
+    //     f.close();
+    // }
+
+
+
 //    try {
 //        File done = writeOutput(output);
 //    } catch (ProcessingException e) {
