@@ -47,38 +47,32 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void setFilepath(String filepath) {
-
     this.filepath = filepath;
   }
 
   @Override
   public void setS(boolean s) {
-    // TODO Auto-generated method stub
     this.sort = s;
 
   }
 
   @Override
   public void setL(boolean l) {
-    // TODO Auto-generated method stub
     this.list = l;
   }
 
   @Override
   public void setRString(String rString) {
-    // TODO Auto-generated method stub
     this.remove = rString;
   }
 
   @Override
   public void setKString(String kString) {
-    // TODO Auto-generated method stub
     this.keep = kString;
   }
 
   @Override
   public void setTInt(int tInt) throws ProcessingException {
-    // TODO Auto-generated method stub
     this.trim = tInt;
   }
 
@@ -189,39 +183,6 @@ public class FileProcessor implements FileProcessorInterface {
         e.printStackTrace();
     }
 
-    
-    // try {
-    //     FileWriter f = new FileWriter(filepath);
-    //      f.write(output);   
-    // } catch(ProcessingException e) {
-    //     e.printStackTrace();
-    // } finally {
-    //     f.close();
-    // }
-
-
-
-//    try {
-//        File done = writeOutput(output);
-//    } catch (ProcessingException e) {
-//        e.printStackTrace();
-//    }
-
   }
   
 }
-
-
-
-    // try {
-    //   File file = new File(filepath);
-
-    //   if (file.createNewFile()) {
-    //     System.out.println("File is created!");
-    //   } else {
-    //     System.out.println("File is already existed!");
-    //   }
-
-	  // } catch (IOException e) {
-		//   e.printStackTrace();
-	  // }
