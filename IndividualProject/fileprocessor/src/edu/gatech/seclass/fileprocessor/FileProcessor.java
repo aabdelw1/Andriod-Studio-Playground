@@ -160,9 +160,10 @@ public class FileProcessor implements FileProcessorInterface {
                 }
             }
             a = tmpArray;
-        } else {
-            throw new ProcessingException("The argument of t must be greater than 0");
         }
+//        } else {
+//            throw new ProcessingException("The argument of t must be greater than 0");
+//        }
     }
 
     //List Function

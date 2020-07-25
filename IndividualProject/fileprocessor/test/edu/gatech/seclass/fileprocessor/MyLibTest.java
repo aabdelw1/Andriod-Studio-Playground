@@ -197,7 +197,6 @@ public class MyLibTest {
         fileProcessor.setL(true);
         fileProcessor.setRString("hello hello");
         fileProcessor.setTInt(4);
-
         fileProcessor.process();
         String expected1 =
                 "1 8130" + System.lineSeparator() +
