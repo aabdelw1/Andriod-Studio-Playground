@@ -98,9 +98,9 @@ public class FileProcessor implements FileProcessorInterface {
     if(filepath == null || filepath.equals("")){
         throw new ProcessingException("No filename provided");
     }
-    if(!keep.equals("") && !remove.equals("")){
-        throw new ProcessingException("Options r and k are mutually exclusive");
-    }
+//    if(!keep.equals("") && !remove.equals("")){
+//        throw new ProcessingException("Options r and k are mutually exclusive");
+//    }
 
     String fileContent = getFileContent(filepath);
 

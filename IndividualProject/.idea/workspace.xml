@@ -22,8 +22,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="458">
-                  <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+                <state relative-caret-position="416">
+                  <caret line="90" column="58" lean-forward="true" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
                   <folding>
                     <element signature="e#1378#1379#0" expanded="true" />
                     <element signature="e#1405#1406#0" expanded="true" />
@@ -232,9 +232,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyLibTest_fileprocessorTest18 - 2020.07.25 at 13h 47m 12s.xml">
-      <configuration name="MyLibTest.fileprocessorTest18" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyLibTest_fileprocessorTest26 - 2020.07.25 at 14h 01m 11s.xml">
       <configuration name="MyLibTest.fileprocessorTest26" configurationId="JUnit" />
     </history-entry>
@@ -260,6 +257,9 @@
       <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 34m 05s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 55m 41s.xml">
       <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -320,8 +320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="92" column="20" lean-forward="true" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+        <state relative-caret-position="416">
+          <caret line="90" column="58" lean-forward="true" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
           <folding>
             <element signature="e#1378#1379#0" expanded="true" />
             <element signature="e#1405#1406#0" expanded="true" />
