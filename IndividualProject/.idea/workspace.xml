@@ -22,13 +22,14 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="193" column="3" lean-forward="true" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
+                <state relative-caret-position="471">
+                  <caret line="149" column="54" lean-forward="true" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
                   <folding>
                     <element signature="e#1378#1379#0" expanded="true" />
                     <element signature="e#1405#1406#0" expanded="true" />
                     <element signature="e#1314#1315#0" expanded="true" />
                     <element signature="e#1337#1338#0" expanded="true" />
+                    <element signature="e#3292#3300#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -319,13 +320,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="193" column="3" lean-forward="true" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
+        <state relative-caret-position="471">
+          <caret line="149" column="54" lean-forward="true" selection-start-line="149" selection-start-column="54" selection-end-line="149" selection-end-column="54" />
           <folding>
             <element signature="e#1378#1379#0" expanded="true" />
             <element signature="e#1405#1406#0" expanded="true" />
             <element signature="e#1314#1315#0" expanded="true" />
             <element signature="e#1337#1338#0" expanded="true" />
+            <element signature="e#3292#3300#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -145,7 +145,7 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Remove function
-    if(false) {
+    if(removeB) {
         if (!remove.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
