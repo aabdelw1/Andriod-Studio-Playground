@@ -52,10 +52,7 @@ public class FileProcessor implements FileProcessorInterface {
   }
 
   @Override
-  public void setS(boolean s) {
-    this.sort = s;
-
-  }
+  public void setS(boolean s) { this.sort = s; }
 
   @Override
   public void setL(boolean l) {
@@ -74,7 +71,7 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void setTInt(int tInt) throws ProcessingException {
-    this.trim = tInt;
+      this.trim = tInt;
   }
 
   @Override
@@ -135,25 +132,25 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Trim function
-    if(trim > 0) trimB = true;
-    if(trimB) {
-        if (trim <= 0) {
-            // System.out.print("You cant do that!!");
-        } else {
-            // if(!trim) trim = 1;
-            ArrayList<String> tmpArray = new ArrayList<String>();
-            for (String line : a) {
-                if (trim > (line.length())) {
-                    String split = line.substring(0, line.length());
-                    tmpArray.add(split);
-                } else {
-                    String split = line.substring(0, trim);
-                    tmpArray.add(split);
-                }
-            }
-            a = tmpArray;
-        }
-    }
+//    if(trim > 0) trimB = true;
+//    if(trimB) {
+//        if (trim <= 0) {
+//            // System.out.print("You cant do that!!");
+//        } else {
+//            // if(!trim) trim = 1;
+//            ArrayList<String> tmpArray = new ArrayList<String>();
+//            for (String line : a) {
+//                if (trim > (line.length())) {
+//                    String split = line.substring(0, line.length());
+//                    tmpArray.add(split);
+//                } else {
+//                    String split = line.substring(0, trim);
+//                    tmpArray.add(split);
+//                }
+//            }
+//            a = tmpArray;
+//        }
+//    }
 
     //List Function
     if(list) {
