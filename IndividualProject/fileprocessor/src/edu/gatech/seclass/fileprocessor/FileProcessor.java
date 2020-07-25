@@ -175,7 +175,7 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //List Function
-    if(false) {
+    if(list) {
         ArrayList<String> tmpArray = new ArrayList<String>();
         int counter = 1;
         for (String line : a) {
