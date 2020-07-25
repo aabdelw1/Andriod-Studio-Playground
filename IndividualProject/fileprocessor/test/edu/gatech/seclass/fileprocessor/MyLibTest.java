@@ -97,13 +97,8 @@ public class MyLibTest {
 
 
     private static final String FILE2 =
-            "Hello" + System.lineSeparator() +
-                    "Beatrice" + System.lineSeparator() +
-                    "albert" + System.lineSeparator() +
-                    "@#$%" + System.lineSeparator() +
-                    "#%Albert" + System.lineSeparator() +
-                    "--’’--911" + System.lineSeparator() +
-                    "hello" + System.lineSeparator();
+            " 123  23874 Hello" + System.lineSeparator();
+
 
     // You can add more files here using the same approach used for FILE1
 
@@ -119,6 +114,26 @@ public class MyLibTest {
         fileProcessor.setS(true);
         fileProcessor.setL(true);
         fileProcessor.process();
+        String expected1 =
+                "1 --’’--911" + System.lineSeparator() +
+                        "2 #%Albert" + System.lineSeparator() +
+                        "3 Beatrice" + System.lineSeparator() +
+                        "4 Hello" + System.lineSeparator() +
+                        "5 albert" + System.lineSeparator() +
+                        "6 hello" + System.lineSeparator();
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
+    @Test
+    public void fileprocessorTest2() throws Exception {
+        File inputFile1 = createInputFile(FILE2);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(true);
+        fileProcessor.setL(true);
+        fileProcessor.process();
+        fileProcessor.setTInt(1);
         String expected1 =
                 "1 --’’--911" + System.lineSeparator() +
                         "2 #%Albert" + System.lineSeparator() +

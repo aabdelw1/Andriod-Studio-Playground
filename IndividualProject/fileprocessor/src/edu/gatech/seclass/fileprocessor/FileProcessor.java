@@ -13,9 +13,15 @@ public class FileProcessor implements FileProcessorInterface {
 
   private static String filepath;
   private static boolean sort;
-  private static boolean list;
+  private static boolean list = false;
+
   private static String keep = "";
+  private static Boolean keepB = false;
+
   private static String remove = "";
+  private static Boolean removeB = false;
+
+
   private static int trim;
   private static boolean trimB = false;
   private Charset charset = StandardCharsets.UTF_8;
@@ -87,78 +93,78 @@ public class FileProcessor implements FileProcessorInterface {
         a.add(line);
     }
 
-    //Sorting Function
-      if(sort){
-          ArrayList<String> tmpArray = new ArrayList<>();
-          int counter = 0;
-          for (String line : a) {
-              String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
-              if(!onlySpecialChar.equals("")){
-                  tmpArray.add(onlySpecialChar + " " + counter);
-              }
-              counter++;
-          }
-          Collections.sort(tmpArray);
-
-          ArrayList<String> thisIsIt = new ArrayList<>();
-          for(String item : tmpArray){
-              String[] splitArray = item.split("\\s+");
-              int index =  Integer.parseInt(splitArray[1]);
-              thisIsIt.add(a.get(index));
-          }
-          a = thisIsIt;
-      }
-
-    //Keep function
-    if(!keep.equals("")){
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for(String line : a) {
-            boolean isPresent = line.indexOf(keep) != -1 ? true : false;
-            if(isPresent) {
-                tmpArray.add(line);
-            }
-        }
-        a = tmpArray;
-    }
-
-    //Remove function
-    if(!remove.equals("")){
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for(String line : a) {
-            boolean isPresent = line.indexOf(remove) != -1 ? true : false;
-            if(!isPresent) {
-                tmpArray.add(line);
-            }
-        }
-        a = tmpArray;
-    }
-
-    //Trim function
-    if (trimB) {
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for (String line : a) {
-            if (trim > (line.length())) {
-                String split = line.substring(0, line.length());
-                tmpArray.add(split);
-            } else {
-                String split = line.substring(0, trim);
-                tmpArray.add(split);
-            }
-        }
-        a = tmpArray;
-    }
-
-    //List Function
-    if(list) {
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        int counter = 1;
-        for (String line : a) {
-            line = counter + " " + line;
-            counter++;
-            tmpArray.add(line);
-        }
-        a = tmpArray;
-    }
+//    //Sorting Function
+//      if(sort){
+//          ArrayList<String> tmpArray = new ArrayList<>();
+//          int counter = 0;
+//          for (String line : a) {
+//              String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
+//              if(!onlySpecialChar.equals("")){
+//                  tmpArray.add(onlySpecialChar + " " + counter);
+//              }
+//              counter++;
+//          }
+//          Collections.sort(tmpArray);
+//
+//          ArrayList<String> thisIsIt = new ArrayList<>();
+//          for(String item : tmpArray){
+//              String[] splitArray = item.split("\\s+");
+//              int index =  Integer.parseInt(splitArray[1]);
+//              thisIsIt.add(a.get(index));
+//          }
+//          a = thisIsIt;
+//      }
+//
+//    //Keep function
+//    if(!keep.equals("")){
+//        ArrayList<String> tmpArray = new ArrayList<String>();
+//        for(String line : a) {
+//            boolean isPresent = line.indexOf(keep) != -1 ? true : false;
+//            if(isPresent) {
+//                tmpArray.add(line);
+//            }
+//        }
+//        a = tmpArray;
+//    }
+//
+//    //Remove function
+//    if(!remove.equals("")){
+//        ArrayList<String> tmpArray = new ArrayList<String>();
+//        for(String line : a) {
+//            boolean isPresent = line.indexOf(remove) != -1 ? true : false;
+//            if(!isPresent) {
+//                tmpArray.add(line);
+//            }
+//        }
+//        a = tmpArray;
+//    }
+//
+//    //Trim function
+//    if (trimB) {
+//        ArrayList<String> tmpArray = new ArrayList<String>();
+//        for (String line : a) {
+//            if (trim > (line.length())) {
+//                String split = line.substring(0, line.length());
+//                tmpArray.add(split);
+//            } else {
+//                String split = line.substring(0, trim);
+//                tmpArray.add(split);
+//            }
+//        }
+//        a = tmpArray;
+//    }
+//
+//    //List Function
+//    if(list) {
+//        ArrayList<String> tmpArray = new ArrayList<String>();
+//        int counter = 1;
+//        for (String line : a) {
+//            line = counter + " " + line;
+//            counter++;
+//            tmpArray.add(line);
+//        }
+//        a = tmpArray;
+//    }
 
 
     //Convert Array to String
