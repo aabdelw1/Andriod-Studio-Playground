@@ -184,7 +184,8 @@ public class FileProcessor implements FileProcessorInterface {
             tmpArray.add(line);
         }
         a = tmpArray;
-    }
+        list = false;
+  }
 
 
     //Convert Array to String
