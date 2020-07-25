@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fdf6fc85-fc33-48eb-891b-b1a27c57961b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +23,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="673">
-                  <caret line="186" column="21" lean-forward="true" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+                <state relative-caret-position="261">
+                  <caret line="195" column="57" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
@@ -35,8 +36,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
-                  <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
+                <state relative-caret-position="-2547">
+                  <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -120,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyLibTest.fileprocessorTest15">
+  <component name="RunManager" selected="JUnit.MyLibTest.fileprocessorTest79">
     <configuration name="MyLibTest.fileprocessorTest15" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fileprocessor" />
       <extension name="coverage">
@@ -148,22 +149,6 @@
       <option name="PACKAGE_NAME" value="edu.gatech.seclass.fileprocessor" />
       <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.fileprocessor.MyLibTest" />
       <option name="METHOD_NAME" value="fileprocessorTest18" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyLibTest.fileprocessorTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fileprocessor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.gatech.seclass.fileprocessor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.gatech.seclass.fileprocessor" />
-      <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.fileprocessor.MyLibTest" />
-      <option name="METHOD_NAME" value="fileprocessorTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,13 +186,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyLibTest.fileprocessorTest79" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fileprocessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.gatech.seclass.fileprocessor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.gatech.seclass.fileprocessor" />
+      <option name="MAIN_CLASS_NAME" value="edu.gatech.seclass.fileprocessor.MyLibTest" />
+      <option name="METHOD_NAME" value="fileprocessorTest79" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyLibTest.fileprocessorTest79" />
         <item itemvalue="JUnit.MyLibTest.fileprocessorTest15" />
         <item itemvalue="JUnit.MyLibTest.fileprocessorTest26" />
         <item itemvalue="JUnit.MyLibTest.fileprocessorTest18" />
         <item itemvalue="JUnit.MyLibTest.fileprocessorTest34" />
-        <item itemvalue="JUnit.MyLibTest.fileprocessorTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -225,24 +226,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyLibTest_fileprocessorTest26 - 2020.07.25 at 13h 22m 37s.xml">
-      <configuration name="MyLibTest.fileprocessorTest26" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLibTest_fileprocessorTest26 - 2020.07.25 at 13h 23m 06s.xml">
-      <configuration name="MyLibTest.fileprocessorTest26" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLibTest_fileprocessorTest34 - 2020.07.25 at 13h 28m 10s.xml">
-      <configuration name="MyLibTest.fileprocessorTest34" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLibTest_fileprocessorTest26 - 2020.07.25 at 13h 37m 15s.xml">
-      <configuration name="MyLibTest.fileprocessorTest26" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLibTest_fileprocessorTest18 - 2020.07.25 at 13h 39m 06s.xml">
-      <configuration name="MyLibTest.fileprocessorTest18" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyLibTest_fileprocessorTest18 - 2020.07.25 at 13h 39m 49s.xml">
-      <configuration name="MyLibTest.fileprocessorTest18" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyLibTest_fileprocessorTest18 - 2020.07.25 at 13h 41m 12s.xml">
       <configuration name="MyLibTest.fileprocessorTest18" configurationId="JUnit" />
     </history-entry>
@@ -254,6 +237,24 @@
     </history-entry>
     <history-entry file="MyLibTest_fileprocessorTest15 - 2020.07.25 at 14h 01m 23s.xml">
       <configuration name="MyLibTest.fileprocessorTest15" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 14m 56s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 15m 43s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 16m 06s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 25m 17s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 25m 43s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyLibTest_fileprocessorTest79 - 2020.07.25 at 14h 33m 20s.xml">
+      <configuration name="MyLibTest.fileprocessorTest79" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -269,12 +270,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32865584" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32865584" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32865584" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3293944" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32865584" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32865584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,7 +295,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java</url>
-          <line>139</line>
+          <line>150</line>
           <properties class="edu.gatech.seclass.fileprocessor.MyLibTest" method="fileprocessorTest15">
             <option name="EMULATED" value="true" />
           </properties>
@@ -306,15 +307,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="173" column="33" lean-forward="true" selection-start-line="173" selection-start-column="33" selection-end-line="173" selection-end-column="33" />
+        <state relative-caret-position="-2547">
+          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="186" column="21" lean-forward="true" selection-start-line="186" selection-start-column="21" selection-end-line="186" selection-end-column="21" />
+        <state relative-caret-position="261">
+          <caret line="195" column="57" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
         </state>
       </provider>
     </entry>

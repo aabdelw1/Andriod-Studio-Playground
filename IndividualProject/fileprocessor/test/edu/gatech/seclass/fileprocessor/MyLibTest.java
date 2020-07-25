@@ -110,6 +110,17 @@ public class MyLibTest {
             "hello" + System.lineSeparator() +
             "Beach" + System.lineSeparator();
 
+    private static final String FILE79 = "hello" + System.lineSeparator();
+
+    private static final String FILE86 = "" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "d" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "" + System.lineSeparator() +
+            "" + System.lineSeparator();
 
     // You can add more files here using the same approach used for FILE1
 
@@ -220,13 +231,35 @@ public class MyLibTest {
         fileProcessor.setFilepath(inputFile1.getPath());
         fileProcessor.setS(true);
         fileProcessor.setL(false);
-        fileProcessor.setKString("8136");
+        fileProcessor.setKString("hell");
         fileProcessor.setTInt(4);
 
         fileProcessor.process();
         String expected1 =
                 "8136" + System.lineSeparator() +
                         "8136" + System.lineSeparator();
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
+    @Test
+    public void fileprocessorTest79() throws Exception {
+        File inputFile1 = createInputFile(FILE86);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(true);
+        fileProcessor.setL(true);
+
+        fileProcessor.process();
+        String expected1 = "1 " + System.lineSeparator() +
+                "2 " + System.lineSeparator() +
+                "3 " + System.lineSeparator() +
+                "4 " + System.lineSeparator() +
+                "5 " + System.lineSeparator() +
+                "6 " + System.lineSeparator() +
+                "7 " + System.lineSeparator() +
+                "8 " + System.lineSeparator() +
+                "9 " + System.lineSeparator();
         String actual1 = getFileContent(inputFile1.getPath());
         assertEquals("The files differ!", expected1, actual1);
     }
