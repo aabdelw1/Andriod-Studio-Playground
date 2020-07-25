@@ -83,6 +83,14 @@ public class FileProcessor implements FileProcessorInterface {
       this.trim = tInt;
   }
 
+  public String toString(ArrayList input) {
+      String output = "";
+      for(String line : input){
+          output = output + line + System.lineSeparator();
+      }
+      return output;
+  }
+
   @Override
   public void process() throws ProcessingException {
 
@@ -115,6 +123,12 @@ public class FileProcessor implements FileProcessorInterface {
               thisIsIt.add(a.get(index));
           }
           a = thisIsIt;
+      }
+      try {
+          writeOutput(toString(a));
+
+      } catch(Exception e) {
+          e.printStackTrace();
       }
 
     //Keep function
@@ -186,15 +200,16 @@ public class FileProcessor implements FileProcessorInterface {
 
     try {
         writeOutput(output);
-        
+
     } catch(Exception e) {
         e.printStackTrace();
-
-        try {
-            writeOutput(e.toString());
-        } catch (Exception p) {
-            p.printStackTrace(); }
     }
+//
+//        try {
+//            writeOutput(e.toString());
+//        } catch (Exception p) {
+//            p.printStackTrace(); }
+//    }
 
   }
   
