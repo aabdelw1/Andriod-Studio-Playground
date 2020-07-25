@@ -89,31 +89,26 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Sorting Function
-    if(sort){
-      ArrayList<String> tmpArray = new ArrayList<String>();
-      ArrayList<ArrayList> fullArray = new ArrayList<ArrayList>();
-      for (String line : a) {
-          ArrayList<String> isDifferent = new ArrayList<String>();
-          String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
-          isDifferent.add(line);
-          isDifferent.add(onlySpecialChar);
-          fullArray.add(isDifferent);
-          if(!onlySpecialChar.equals("")){
-              tmpArray.add(onlySpecialChar);
-          }
-      }
-      Collections.sort(tmpArray);
-      ArrayList<String> thisIsIt = new ArrayList<String>();
-      for(String item : tmpArray){
-          for(int i = 0; i < fullArray.size(); i++){
-              if(item.equals(fullArray.get(i).get(1))){
-                  thisIsIt.add(fullArray.get(i).get(0).toString());
-              }
+      if(sort){
 
+          ArrayList<String> tmpArray = new ArrayList<String>();
+          int counter = 0;
+          for (String line : a) {
+              String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
+              if(!onlySpecialChar.equals("")){
+                  tmpArray.add(onlySpecialChar + counter);
+              }
+              counter++;
           }
+          Collections.sort(tmpArray);
+
+          ArrayList<String> thisIsIt = new ArrayList<String>();
+          for(String item : tmpArray){
+              int index =  Integer.parseInt(item.substring(item.length() - 1));
+              thisIsIt.add(a.get(index));
+          }
+          a = thisIsIt;
       }
-      a = thisIsIt;
-    }
 
     //Keep function
     if(!keep.equals("")){
