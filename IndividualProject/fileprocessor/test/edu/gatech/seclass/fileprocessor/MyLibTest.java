@@ -169,7 +169,7 @@ public class MyLibTest {
 
         fileProcessor.setFilepath(inputFile1.getPath());
         fileProcessor.setS(true);
-        fileProcessor.setL(false);
+        fileProcessor.setL(true);
         fileProcessor.setRString("hello");
         fileProcessor.setTInt(2);
 

@@ -189,6 +189,11 @@ public class FileProcessor implements FileProcessorInterface {
         
     } catch(Exception e) {
         e.printStackTrace();
+
+        try {
+            writeOutput(e.toString());
+        } catch (Exception p) {
+            p.printStackTrace(); }
     }
 
   }
