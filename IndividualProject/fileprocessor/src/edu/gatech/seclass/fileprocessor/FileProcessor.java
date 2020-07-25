@@ -156,7 +156,7 @@ public class FileProcessor implements FileProcessorInterface {
 
     //Trim function
 
-    if (false) {
+    if (trimB) {
         if(trim > 0) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
