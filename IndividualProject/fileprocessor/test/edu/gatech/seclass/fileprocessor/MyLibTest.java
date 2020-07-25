@@ -96,8 +96,19 @@ public class MyLibTest {
                     "hello" + System.lineSeparator();
 
 
-    private static final String FILE2 =
-            " 123  23874 Hello" + System.lineSeparator();
+    private static final String FILE15 =
+            "!@#*912, I am going home." + System.lineSeparator() +
+            "Hello 8, my -lucky- number" + System.lineSeparator() +
+            "8136 is our waiting number. Let's go sit down and wait." + System.lineSeparator() +
+            "8136 is our ticket number. Let's go sit down and enjoy the show." + System.lineSeparator() +
+            "8130, I have a special task for you." + System.lineSeparator() +
+            "Hello friends, it is so nice to have you with us today." + System.lineSeparator() +
+            "Albert Einstein was a genius." + System.lineSeparator() +
+            "hello hello hello~~~~~~~~~" + System.lineSeparator() +
+            "--''--911" + System.lineSeparator() +
+            "@#$%" + System.lineSeparator() +
+            "hello" + System.lineSeparator() +
+            "Beach" + System.lineSeparator();
 
 
     // You can add more files here using the same approach used for FILE1
@@ -126,21 +137,97 @@ public class MyLibTest {
     }
 
     @Test
-    public void fileprocessorTest2() throws Exception {
-        File inputFile1 = createInputFile(FILE2);
+    public void fileprocessorTest15() throws Exception {
+        File inputFile1 = createInputFile(FILE15);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(false);
+        fileProcessor.setL(true);
+        fileProcessor.setTInt(3);
+
+        fileProcessor.process();
+        String expected1 =
+                "1 !@#" + System.lineSeparator() +
+                        "2 Hel" + System.lineSeparator() +
+                        "3 813" + System.lineSeparator() +
+                        "4 813" + System.lineSeparator() +
+                        "5 813" + System.lineSeparator() +
+                        "6 Hel" + System.lineSeparator() +
+                        "7 Alb" + System.lineSeparator() +
+                        "8 hel" + System.lineSeparator() +
+                        "9 --'" + System.lineSeparator() +
+                        "10 @#$" + System.lineSeparator() +
+                        "11 hel" + System.lineSeparator() +
+                        "12 Bea"  + System.lineSeparator();
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
+    @Test
+    public void fileprocessorTest18() throws Exception {
+        File inputFile1 = createInputFile(FILE15);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(true);
+        fileProcessor.setL(false);
+        fileProcessor.setRString("hello");
+        fileProcessor.setTInt(2);
+
+        fileProcessor.process();
+        String expected1 =
+                "81" + System.lineSeparator() +
+                        "81" + System.lineSeparator() +
+                        "81" + System.lineSeparator() +
+                        "--" + System.lineSeparator() +
+                        "!@" + System.lineSeparator() +
+                        "Al" + System.lineSeparator() +
+                        "Be" + System.lineSeparator() +
+                        "He" + System.lineSeparator() +
+                        "He" + System.lineSeparator();
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
+    @Test
+    public void fileprocessorTest26() throws Exception {
+        File inputFile1 = createInputFile(FILE15);
 
         fileProcessor.setFilepath(inputFile1.getPath());
         fileProcessor.setS(true);
         fileProcessor.setL(true);
+        fileProcessor.setRString("hello hello");
+        fileProcessor.setTInt(4);
+
         fileProcessor.process();
-        fileProcessor.setTInt(1);
         String expected1 =
-                "1 --’’--911" + System.lineSeparator() +
-                        "2 #%Albert" + System.lineSeparator() +
-                        "3 Beatrice" + System.lineSeparator() +
-                        "4 Hello" + System.lineSeparator() +
-                        "5 albert" + System.lineSeparator() +
-                        "6 hello" + System.lineSeparator();
+                "1 8130" + System.lineSeparator() +
+                        "2 8136" + System.lineSeparator() +
+                        "3 8136" + System.lineSeparator() +
+                        "4 --''" + System.lineSeparator() +
+                        "5 !@#*" + System.lineSeparator() +
+                        "6 Albe" + System.lineSeparator() +
+                        "7 Beac" + System.lineSeparator() +
+                        "8 Hell" + System.lineSeparator() +
+                        "9 Hell" + System.lineSeparator() +
+                        "10 hell" + System.lineSeparator();
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
+    @Test
+    public void fileprocessorTest34() throws Exception {
+        File inputFile1 = createInputFile(FILE15);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(true);
+        fileProcessor.setL(false);
+        fileProcessor.setKString("8136");
+        fileProcessor.setTInt(4);
+
+        fileProcessor.process();
+        String expected1 =
+                "8136" + System.lineSeparator() +
+                        "8136" + System.lineSeparator();
         String actual1 = getFileContent(inputFile1.getPath());
         assertEquals("The files differ!", expected1, actual1);
     }
