@@ -95,7 +95,7 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void process() throws ProcessingException {
-    if(filepath == null || filepath == ""){
+    if(filepath == null || filepath.equals("")){
         throw new ProcessingException("No filename provided");
     }
     if(!keep.equals("") && !remove.equals("")){
