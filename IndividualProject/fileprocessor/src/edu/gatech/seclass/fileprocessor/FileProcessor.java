@@ -16,7 +16,7 @@ public class FileProcessor implements FileProcessorInterface {
   private static boolean list;
   private static String keep = "";
   private static String remove = "";
-  private static int trim = 10000000;
+  private static int trim;
   private static boolean trimB = false;
   private Charset charset = StandardCharsets.UTF_8;
 
@@ -71,6 +71,7 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void setTInt(int tInt) throws ProcessingException {
+      trimB = true;
       this.trim = tInt;
   }
 
@@ -93,7 +94,7 @@ public class FileProcessor implements FileProcessorInterface {
           for (String line : a) {
               String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
               if(!onlySpecialChar.equals("")){
-                  tmpArray.add(onlySpecialChar + counter);
+                  tmpArray.add(onlySpecialChar + " " + counter);
               }
               counter++;
           }
@@ -101,7 +102,8 @@ public class FileProcessor implements FileProcessorInterface {
 
           ArrayList<String> thisIsIt = new ArrayList<>();
           for(String item : tmpArray){
-              int index =  Integer.parseInt(item.substring(item.length() - 1));
+              String[] splitArray = item.split("\\s+");
+              int index =  Integer.parseInt(splitArray[1]);
               thisIsIt.add(a.get(index));
           }
           a = thisIsIt;
@@ -132,25 +134,19 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Trim function
-//    if(trim > 0) trimB = true;
-//    if(trimB) {
-//        if (trim <= 0) {
-//            // System.out.print("You cant do that!!");
-//        } else {
-//            // if(!trim) trim = 1;
-//            ArrayList<String> tmpArray = new ArrayList<String>();
-//            for (String line : a) {
-//                if (trim > (line.length())) {
-//                    String split = line.substring(0, line.length());
-//                    tmpArray.add(split);
-//                } else {
-//                    String split = line.substring(0, trim);
-//                    tmpArray.add(split);
-//                }
-//            }
-//            a = tmpArray;
-//        }
-//    }
+    if (trimB) {
+        ArrayList<String> tmpArray = new ArrayList<String>();
+        for (String line : a) {
+            if (trim > (line.length())) {
+                String split = line.substring(0, line.length());
+                tmpArray.add(split);
+            } else {
+                String split = line.substring(0, trim);
+                tmpArray.add(split);
+            }
+        }
+        a = tmpArray;
+    }
 
     //List Function
     if(list) {
