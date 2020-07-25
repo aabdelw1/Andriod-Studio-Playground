@@ -16,7 +16,8 @@ public class FileProcessor implements FileProcessorInterface {
   private static boolean list;
   private static String keep = "";
   private static String remove = "";
-  private static int trim; 
+  private static int trim;
+  private static boolean trimB = false;
   private Charset charset = StandardCharsets.UTF_8;
 
 
@@ -90,8 +91,7 @@ public class FileProcessor implements FileProcessorInterface {
 
     //Sorting Function
       if(sort){
-
-          ArrayList<String> tmpArray = new ArrayList<String>();
+          ArrayList<String> tmpArray = new ArrayList<>();
           int counter = 0;
           for (String line : a) {
               String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
@@ -102,7 +102,7 @@ public class FileProcessor implements FileProcessorInterface {
           }
           Collections.sort(tmpArray);
 
-          ArrayList<String> thisIsIt = new ArrayList<String>();
+          ArrayList<String> thisIsIt = new ArrayList<>();
           for(String item : tmpArray){
               int index =  Integer.parseInt(item.substring(item.length() - 1));
               thisIsIt.add(a.get(index));
@@ -135,21 +135,24 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Trim function
-    if(trim <= 0){
-        // System.out.print("You cant do that!!");
-    } else {
-        // if(!trim) trim = 1;
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for(String line : a){
-            if(trim > (line.length())) {
-                String split = line.substring(0, line.length());
-                tmpArray.add(split);
-            } else {
-                String split = line.substring(0, trim);
-                tmpArray.add(split);
+    if(trim > 0) trimB = true;
+    if(trimB) {
+        if (trim <= 0) {
+            // System.out.print("You cant do that!!");
+        } else {
+            // if(!trim) trim = 1;
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                if (trim > (line.length())) {
+                    String split = line.substring(0, line.length());
+                    tmpArray.add(split);
+                } else {
+                    String split = line.substring(0, trim);
+                    tmpArray.add(split);
+                }
             }
+            a = tmpArray;
         }
-        a = tmpArray;
     }
 
     //List Function
