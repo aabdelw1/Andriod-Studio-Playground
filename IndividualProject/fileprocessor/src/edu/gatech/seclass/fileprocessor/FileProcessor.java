@@ -211,6 +211,7 @@ public class FileProcessor implements FileProcessorInterface {
       output = output + keep + System.lineSeparator();
       output = output + remove + System.lineSeparator();
       output = output + trim + System.lineSeparator();
+      output = output + filepath + System.lineSeparator();
 
 
       try {
