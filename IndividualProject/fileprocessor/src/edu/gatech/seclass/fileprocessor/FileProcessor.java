@@ -124,15 +124,10 @@ public class FileProcessor implements FileProcessorInterface {
           }
           a = thisIsIt;
       }
-      try {
-          writeOutput(toString(a));
 
-      } catch(Exception e) {
-          e.printStackTrace();
-      }
 
     //Keep function
-    if(keepB) {
+    if(false) {
         if (!keep.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
@@ -146,7 +141,7 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //Remove function
-    if(removeB) {
+    if(false) {
         if (!remove.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
@@ -161,7 +156,7 @@ public class FileProcessor implements FileProcessorInterface {
 
     //Trim function
 
-    if (trimB) {
+    if (false) {
         if(trim > 0) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
@@ -180,7 +175,7 @@ public class FileProcessor implements FileProcessorInterface {
     }
 
     //List Function
-    if(list) {
+    if(false) {
         ArrayList<String> tmpArray = new ArrayList<String>();
         int counter = 1;
         for (String line : a) {
