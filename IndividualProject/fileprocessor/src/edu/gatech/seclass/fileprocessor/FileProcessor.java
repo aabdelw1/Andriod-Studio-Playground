@@ -95,10 +95,10 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void process() throws ProcessingException {
-    if(filepath == null){
+    if(filepath == null || filepath == ""){
         throw new ProcessingException("No filename provided");
     }
-    if(keepB && removeB){
+    if(!keep.equals("") && !remove.equals("")){
         throw new ProcessingException("Options r and k are mutually exclusive");
     }
 
