@@ -58,7 +58,9 @@ public class FileProcessor implements FileProcessorInterface {
   }
 
   @Override
-  public void setS(boolean s) { this.sort = s; }
+  public void setS(boolean s) {
+      this.sort = s;
+  }
 
   @Override
   public void setL(boolean l) {
@@ -103,89 +105,93 @@ public class FileProcessor implements FileProcessorInterface {
         a.add(line);
     }
 //
-//    //Sorting Function
-//      if(sort){
-//          ArrayList<String> tmpArray = new ArrayList<>();
-//          int counter = 0;
-//          for (String line : a) {
-//              String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
-//              if(!onlySpecialChar.equals("")){
-//                  tmpArray.add(onlySpecialChar + " " + counter);
-//              }
-//              counter++;
-//          }
-//          Collections.sort(tmpArray);
-//
-//          ArrayList<String> thisIsIt = new ArrayList<>();
-//          for(String item : tmpArray){
-//              String[] splitArray = item.split("\\s+");
-//              int index =  Integer.parseInt(splitArray[1]);
-//              thisIsIt.add(a.get(index));
-//          }
-//          a = thisIsIt;
-//      }
-//
-//
-//    //Keep function
-//    if(keepB) {
-//        if (!keep.equals("")) {
-//            ArrayList<String> tmpArray = new ArrayList<String>();
-//            for (String line : a) {
-//                boolean isPresent = line.indexOf(keep) != -1 ? true : false;
-//                if (isPresent) {
-//                    tmpArray.add(line);
-//                }
-//            }
-//            a = tmpArray;
-//        }
-//    }
-//
-//    //Remove function
-//    if(false) {
-//        if (!remove.equals("")) {
-//            ArrayList<String> tmpArray = new ArrayList<String>();
-//            for (String line : a) {
-//                boolean isPresent = line.indexOf(remove) != -1 ? true : false;
-//                if (!isPresent) {
-//                    tmpArray.add(line);
-//                }
-//            }
-//            a = tmpArray;
-//        }
-//    }
-//
-//    //Trim function
-//
-//    if (trimB) {
-//        if(trim > 0) {
-//            ArrayList<String> tmpArray = new ArrayList<String>();
-//            for (String line : a) {
-//                if (trim > (line.length())) {
-//                    String split = line.substring(0, line.length());
-//                    tmpArray.add(split);
-//                } else {
-//                    String split = line.substring(0, trim);
-//                    tmpArray.add(split);
-//                }
-//            }
-//            a = tmpArray;
-//        } else {
-//            throw new ProcessingException("The argument of t must be greater than 0");
-//        }
-//    }
-//
-//    //List Function
-//    if(list) {
-//        ArrayList<String> tmpArray = new ArrayList<String>();
-//        int counter = 1;
-//        for (String line : a) {
-//            line = counter + " " + line;
-//            counter++;
-//            tmpArray.add(line);
-//        }
-//        a = tmpArray;
-//        list = false;
-//  }
+    //Sorting Function
+      if(sort){
+          ArrayList<String> tmpArray = new ArrayList<>();
+          int counter = 0;
+          for (String line : a) {
+              String onlySpecialChar = line.replaceAll("[^a-zA-z0-9]", "");
+              if(!onlySpecialChar.equals("")){
+                  tmpArray.add(onlySpecialChar + " " + counter);
+              }
+              counter++;
+          }
+          Collections.sort(tmpArray);
+
+          ArrayList<String> thisIsIt = new ArrayList<>();
+          for(String item : tmpArray){
+              String[] splitArray = item.split("\\s+");
+              int index =  Integer.parseInt(splitArray[1]);
+              thisIsIt.add(a.get(index));
+          }
+          a = thisIsIt;
+          sort = false;
+      }
+
+
+    //Keep function
+    if(keepB) {
+        if (!keep.equals("")) {
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                boolean isPresent = line.indexOf(keep) != -1 ? true : false;
+                if (isPresent) {
+                    tmpArray.add(line);
+                }
+            }
+            a = tmpArray;
+        }
+        keepB = false;
+    }
+
+    //Remove function
+    if(false) {
+        if (!remove.equals("")) {
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                boolean isPresent = line.indexOf(remove) != -1 ? true : false;
+                if (!isPresent) {
+                    tmpArray.add(line);
+                }
+            }
+            a = tmpArray;
+        }
+        removeB = false;
+    }
+
+    //Trim function
+
+    if (trimB) {
+        if(trim > 0) {
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                if (trim > (line.length())) {
+                    String split = line.substring(0, line.length());
+                    tmpArray.add(split);
+                } else {
+                    String split = line.substring(0, trim);
+                    tmpArray.add(split);
+                }
+            }
+            a = tmpArray;
+        } else {
+            throw new ProcessingException("The argument of t must be greater than 0");
+        }
+        trimB = false;
+    }
+
+    //List Function
+    if(list) {
+        ArrayList<String> tmpArray = new ArrayList<String>();
+        int counter = 1;
+        for (String line : a) {
+            line = counter + " " + line;
+            counter++;
+            tmpArray.add(line);
+        }
+        a = tmpArray;
+        list = false;
+  }
 
 
     //Convert Array to String
@@ -193,13 +199,13 @@ public class FileProcessor implements FileProcessorInterface {
     for(String line : a){
         output = output + line + System.lineSeparator();
     }
-    output = output + "------------------------" + System.lineSeparator();
-    output = output + sort + System.lineSeparator();
-      output = output + list + System.lineSeparator();
-      output = output + keep + System.lineSeparator();
-      output = output + remove + System.lineSeparator();
-      output = output + trim + System.lineSeparator();
-
+//    output = output + "------------------------" + System.lineSeparator();
+//    output = output + sort + System.lineSeparator();
+//      output = output + list + System.lineSeparator();
+//      output = output + keep + System.lineSeparator();
+//      output = output + remove + System.lineSeparator();
+//      output = output + trim + System.lineSeparator();
+//
 
       try {
         writeOutput(output);
