@@ -67,12 +67,14 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void setRString(String rString) {
-    this.remove = rString;
+      removeB = true;
+      this.remove = rString;
   }
 
   @Override
   public void setKString(String kString) {
-    this.keep = kString;
+      keepB = true;
+      this.keep = kString;
   }
 
   @Override
@@ -116,27 +118,31 @@ public class FileProcessor implements FileProcessorInterface {
       }
 
     //Keep function
-    if(!keep.equals("")){
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for(String line : a) {
-            boolean isPresent = line.indexOf(keep) != -1 ? true : false;
-            if(isPresent) {
-                tmpArray.add(line);
+    if(keepB) {
+        if (!keep.equals("")) {
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                boolean isPresent = line.indexOf(keep) != -1 ? true : false;
+                if (isPresent) {
+                    tmpArray.add(line);
+                }
             }
+            a = tmpArray;
         }
-        a = tmpArray;
     }
 
     //Remove function
-    if(!remove.equals("")){
-        ArrayList<String> tmpArray = new ArrayList<String>();
-        for(String line : a) {
-            boolean isPresent = line.indexOf(remove) != -1 ? true : false;
-            if(!isPresent) {
-                tmpArray.add(line);
+    if(removeB) {
+        if (!remove.equals("")) {
+            ArrayList<String> tmpArray = new ArrayList<String>();
+            for (String line : a) {
+                boolean isPresent = line.indexOf(remove) != -1 ? true : false;
+                if (!isPresent) {
+                    tmpArray.add(line);
+                }
             }
+            a = tmpArray;
         }
-        a = tmpArray;
     }
 
     //Trim function
