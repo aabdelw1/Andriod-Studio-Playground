@@ -205,13 +205,13 @@ public class FileProcessor implements FileProcessorInterface {
     for(String line : a){
         output = output + line + System.lineSeparator();
     }
-//    output = output + "------------------------" + System.lineSeparator();
-//    output = output + sort + System.lineSeparator();
-//      output = output + list + System.lineSeparator();
-//      output = output + keep + System.lineSeparator();
-//      output = output + remove + System.lineSeparator();
-//      output = output + trim + System.lineSeparator();
-//
+    output = output + "------------------------" + System.lineSeparator();
+    output = output + sort + System.lineSeparator();
+      output = output + list + System.lineSeparator();
+      output = output + keep + System.lineSeparator();
+      output = output + remove + System.lineSeparator();
+      output = output + trim + System.lineSeparator();
+
 
       try {
         writeOutput(output);

@@ -264,6 +264,39 @@ public class MyLibTest {
         assertEquals("The files differ!", expected1, actual1);
     }
 
+    @Test
+    public void fileprocessorTest9() throws Exception {
+        String FILE4 =
+                "Spaces should not matter" + System.lineSeparator() +
+                        "Spacesshould not matter" + System.lineSeparator() +
+                        "Spacesshouldnot matter" + System.lineSeparator() +
+                        "Spacesshouldnotmatter" + System.lineSeparator() +
+                        "Spaces shouldnot matter" + System.lineSeparator() +
+                        "abbb" + System.lineSeparator()+
+                        "a ddd" + System.lineSeparator()+
+                        "a ccc" + System.lineSeparator();
+        File inputFile1 = createInputFile(FILE4);
+
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(true);
+        fileProcessor.setL(true);
+
+//        fileProcessor.setTInt(4);
+        fileProcessor.process();
+        String expected1 =
+                "1 Spaces should not matter" + System.lineSeparator() +
+                        "2 Spacesshould not matter" + System.lineSeparator() +
+                        "3 Spacesshouldnot matter" + System.lineSeparator() +
+                        "4 Spacesshouldnotmatter" + System.lineSeparator() +
+                        "5 Spaces shouldnot matter" + System.lineSeparator() +
+                        "6 abbb" + System.lineSeparator() +
+                        "7 a ccc" + System.lineSeparator() +
+                        "8 a ddd" + System.lineSeparator();
+
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+    }
+
 
 
     // Add your test cases under the provided one and
