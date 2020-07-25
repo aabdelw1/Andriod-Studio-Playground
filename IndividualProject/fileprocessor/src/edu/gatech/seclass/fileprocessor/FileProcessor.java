@@ -6,7 +6,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
+import java.util.regex.Pattern;
 
 
 public class FileProcessor implements FileProcessorInterface {
@@ -95,6 +95,12 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void process() throws ProcessingException {
+    if(filepath == null){
+        throw new ProcessingException("No filename provided");
+    }
+    if(keepB && removeB){
+        throw new ProcessingException("Options r and k are mutually exclusive");
+    }
 
     String fileContent = getFileContent(filepath);
 
