@@ -83,7 +83,7 @@ public class FileProcessor implements FileProcessorInterface {
       this.trim = tInt;
   }
 
-  public String toString(ArrayList input) {
+  public String toString(ArrayList<String> input) {
       String output = "";
       for(String line : input){
           output = output + line + System.lineSeparator();
