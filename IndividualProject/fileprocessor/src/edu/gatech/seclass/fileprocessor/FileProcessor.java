@@ -110,7 +110,11 @@ public class FileProcessor implements FileProcessorInterface {
     if(splitFileName.length == 0){
         throw new ProcessingException("No filename provided");
     } else if(splitFileName.length == 1){
-        throw new ProcessingException("No filename provided");
+        if(splitFileName[0].equals(" ")){
+            throw new ProcessingException("Invalid filename")
+        } else {
+            throw new ProcessingException("No filename provided");
+        }
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
         throw new ProcessingException("Cannot read file: No_such_file.txt");
     }
@@ -119,12 +123,6 @@ public class FileProcessor implements FileProcessorInterface {
 
       String fileContent = getFileContent(filepath);
 
-
-
-      if(fileContent.equals("")){
-          throw new ProcessingException("Invalid filename");
-
-      }
       //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
       ArrayList <String> a = new ArrayList<>();
