@@ -96,13 +96,8 @@ public class FileProcessor implements FileProcessorInterface {
   @Override
   public void process() throws ProcessingException {
 
-//    if(filepath == null || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
-//        throw new ProcessingException("No filename provided");
-//    }
-//    if(!keep.equals("") && !remove.equals("")){
-//        throw new ProcessingException("Options r and k are mutually exclusive");
-//    }
-//
+
+
     String[] splitFilePath = filepath.split("/");
     String fileName = splitFilePath[splitFilePath.length - 1];
     String[] splitFileName = fileName.split("\\.");
@@ -126,6 +121,11 @@ public class FileProcessor implements FileProcessorInterface {
      if(fileContent == null){
          throw new ProcessingException("No filename provided");
      }
+
+     if(keep != null && remove != null){
+        throw new ProcessingException("Options r and k are mutually exclusive");
+     }
+
 
       //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
