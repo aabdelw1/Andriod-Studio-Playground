@@ -108,7 +108,7 @@ public class FileProcessor implements FileProcessorInterface {
     String[] splitFileName = fileName.split("\\.");
 
     if(splitFileName.length < 2){
-        throw new ProcessingException("Invalid filename");
+        throw new ProcessingException("No filename provided");
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
         throw new ProcessingException("Cannot read file: No_such_file.txt");
     }
