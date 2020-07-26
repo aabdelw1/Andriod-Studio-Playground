@@ -123,6 +123,10 @@ public class FileProcessor implements FileProcessorInterface {
 
       String fileContent = getFileContent(filepath);
 
+      if(fileContent.equals("")){
+          throw new ProcessingException("Invalid filename");
+      }
+
       //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
       ArrayList <String> a = new ArrayList<>();
