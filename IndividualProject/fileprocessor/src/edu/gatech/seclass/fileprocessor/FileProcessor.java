@@ -103,17 +103,17 @@ public class FileProcessor implements FileProcessorInterface {
 //        throw new ProcessingException("Options r and k are mutually exclusive");
 //    }
 //
-    String[] splitFilePath = filepath.split("/");
-    String fileName = splitFilePath[splitFilePath.length - 1];
-    String[] splitFileName = fileName.split("\\.");
-
-    if(splitFileName.length == 0){
-        throw new ProcessingException("No filename provided");
-    } else if(splitFileName.length == 1){
-        throw new ProcessingException("No filename provided");
-    } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
-        throw new ProcessingException("Cannot read file: No_such_file.txt");
-    }
+//    String[] splitFilePath = filepath.split("/");
+//    String fileName = splitFilePath[splitFilePath.length - 1];
+//    String[] splitFileName = fileName.split("\\.");
+//
+//    if(splitFileName.length == 0){
+//        throw new ProcessingException("No filename provided");
+//    } else if(splitFileName.length == 1){
+//        throw new ProcessingException("No filename provided");
+//    } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
+//        throw new ProcessingException("Cannot read file: No_such_file.txt");
+//    }
 
 
 
@@ -236,13 +236,13 @@ public class FileProcessor implements FileProcessorInterface {
             output = output + line + System.lineSeparator();
         }
     }
-//    output = output + "------------------------" + System.lineSeparator();
-//    output = output + sort + System.lineSeparator();
-//      output = output + list + System.lineSeparator();
-//      output = output + keep + System.lineSeparator();
-//      output = output + remove + System.lineSeparator();
-//      output = output + trim + System.lineSeparator();
-//      output = output + filepath + System.lineSeparator();
+    output = output + "------------------------" + System.lineSeparator();
+      output = output + "sort: " + sort + System.lineSeparator();
+      output = output + "list: " + list + System.lineSeparator();
+      output = output + "keep: "+ keep + System.lineSeparator();
+      output = output + "remove: " + remove + System.lineSeparator();
+      output = output + "trim: "+ trim + System.lineSeparator();
+      output = output + "filepath: "+ filepath + System.lineSeparator();
 
 
       try {
