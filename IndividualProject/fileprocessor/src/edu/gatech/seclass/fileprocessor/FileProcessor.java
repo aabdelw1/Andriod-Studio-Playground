@@ -240,13 +240,13 @@ public class FileProcessor implements FileProcessorInterface {
             output = output + line + System.lineSeparator();
         }
     }
-    output = output + "------------------------" + System.lineSeparator();
-      output = output + "sort: " + sort + System.lineSeparator();
-      output = output + "list: " + list + System.lineSeparator();
-      output = output + "keep: "+ keep + System.lineSeparator();
-      output = output + "remove: " + remove + System.lineSeparator();
-      output = output + "trim: "+ trim + System.lineSeparator();
-      output = output + "filepath: "+ filepath + System.lineSeparator();
+//    output = output + "------------------------" + System.lineSeparator();
+//      output = output + "sort: " + sort + System.lineSeparator();
+//      output = output + "list: " + list + System.lineSeparator();
+//      output = output + "keep: "+ keep + System.lineSeparator();
+//      output = output + "remove: " + remove + System.lineSeparator();
+//      output = output + "trim: "+ trim + System.lineSeparator();
+//      output = output + "filepath: "+ filepath + System.lineSeparator();
 
 
       try {
