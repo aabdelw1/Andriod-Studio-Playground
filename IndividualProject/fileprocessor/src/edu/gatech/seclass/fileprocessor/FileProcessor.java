@@ -107,7 +107,7 @@ public class FileProcessor implements FileProcessorInterface {
     String fileName = splitFilePath[splitFilePath.length - 1];
     String[] splitFileName = fileName.split("\\.");
 
-    if(splitFileName.length == 0 || splitFilePath.length == 0){
+    if(splitFileName.length == 0 || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
         throw new ProcessingException("No filename provided");
     } else if(splitFileName.length == 1){
         throw new ProcessingException("Invalid filename");
