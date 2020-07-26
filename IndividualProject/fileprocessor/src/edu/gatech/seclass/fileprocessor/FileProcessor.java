@@ -123,7 +123,7 @@ public class FileProcessor implements FileProcessorInterface {
 
       String fileContent = getFileContent(filepath);
 
-     if(fileContent == null || fileContent.isEmpty()){
+     if(fileContent == null){
          throw new ProcessingException("No filename provided");
      }
 
