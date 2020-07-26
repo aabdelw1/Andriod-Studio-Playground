@@ -122,7 +122,7 @@ public class FileProcessor implements FileProcessorInterface {
          throw new ProcessingException("No filename provided");
      }
 
-     if(keep != null && remove != null){
+     if(!keepB && !removeB){
         throw new ProcessingException("Options r and k are mutually exclusive");
      }
 
