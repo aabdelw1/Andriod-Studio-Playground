@@ -110,7 +110,7 @@ public class FileProcessor implements FileProcessorInterface {
     if(splitFileName.length == 0 || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
         throw new ProcessingException("No filename provided");
     } else if(splitFileName.length == 1){
-        throw new ProcessingException("Invalid filename");
+        throw new ProcessingException("No filename provided");
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
         throw new ProcessingException("Cannot read file: No_such_file.txt");
     }
