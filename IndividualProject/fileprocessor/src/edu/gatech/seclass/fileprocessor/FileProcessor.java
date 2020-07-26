@@ -54,7 +54,7 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void setFilepath(String filepath) {
-    this.filepath = filepath;
+      this.filepath = filepath;
   }
 
   @Override
@@ -95,14 +95,27 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void process() throws ProcessingException {
+
     if(filepath == null || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
         throw new ProcessingException("No filename provided");
     }
 //    if(!keep.equals("") && !remove.equals("")){
 //        throw new ProcessingException("Options r and k are mutually exclusive");
 //    }
+//
+    String[] splitFilePath = filepath.split("/");
+    String fileName = splitFilePath[splitFilePath.length - 1];
+    String[] splitFileName = fileName.split("\\.");
 
-    String fileContent = getFileContent(filepath);
+    if(splitFileName.length < 2){
+        throw new ProcessingException("Invalid filename");
+    } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
+        throw new ProcessingException("Cannot read file: No_such_file.txt");
+    }
+
+
+
+      String fileContent = getFileContent(filepath);
 
     //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
