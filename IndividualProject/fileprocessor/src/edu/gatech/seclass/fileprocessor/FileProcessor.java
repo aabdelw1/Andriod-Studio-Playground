@@ -122,10 +122,6 @@ public class FileProcessor implements FileProcessorInterface {
          throw new ProcessingException("No filename provided");
      }
 
-     if(!keepB && !removeB){
-        throw new ProcessingException("Options r and k are mutually exclusive");
-     }
-
 
       //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
@@ -253,6 +249,9 @@ public class FileProcessor implements FileProcessorInterface {
 //      output = output + "filepath: "+ filepath + System.lineSeparator();
 
 
+      if(!keepB && !removeB && output.isEmpty()){
+          throw new ProcessingException("Options r and k are mutually exclusive");
+      }
       try {
         writeOutput(output);
 
