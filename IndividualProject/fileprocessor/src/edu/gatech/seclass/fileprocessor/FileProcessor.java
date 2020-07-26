@@ -105,11 +105,23 @@ public class FileProcessor implements FileProcessorInterface {
     String fileContent = getFileContent(filepath);
 
     //Convert fileContent Into Array
-    String[] arrayFile = fileContent.split("\\r?\\n");
-    ArrayList <String> a = new ArrayList<String>();
-    for (String line : arrayFile){
-        a.add(line);
-    }
+      String[] arrayFile = fileContent.split("\\r?\\n");
+      ArrayList <String> a = new ArrayList<>();
+      String str = fileContent;
+      str = str.replace("\r\n", "\n");
+      str = str.replace("\r", "\n");
+      int lineCount = str.length() - str.replace("\n", "").length();
+
+
+      if(arrayFile.length != 0 && (lineCount == arrayFile.length)){
+          for (String line : arrayFile){
+              a.add(line);
+          }
+      } else {
+          for (int i = 0; i < lineCount; i++){
+              a.add("");
+          }
+      }
 //
     //Sorting Function
       if(sort){
