@@ -123,6 +123,10 @@ public class FileProcessor implements FileProcessorInterface {
 
       String fileContent = getFileContent(filepath);
 
+     if(fileContent == null || fileContent.isEmpty()){
+         throw new ProcessingException(("No filename provided");
+     }
+
       //Convert fileContent Into Array
       String[] arrayFile = fileContent.split("\\r?\\n");
       ArrayList <String> a = new ArrayList<>();
