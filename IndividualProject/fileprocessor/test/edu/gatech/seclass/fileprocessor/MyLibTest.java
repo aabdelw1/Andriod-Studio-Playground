@@ -186,15 +186,15 @@ public class MyLibTest {
 
         fileProcessor.process();
         String expected1 =
-                "81" + System.lineSeparator() +
-                        "81" + System.lineSeparator() +
-                        "81" + System.lineSeparator() +
-                        "--" + System.lineSeparator() +
-                        "!@" + System.lineSeparator() +
-                        "Al" + System.lineSeparator() +
-                        "Be" + System.lineSeparator() +
-                        "He" + System.lineSeparator() +
-                        "He" + System.lineSeparator();
+                "1 81" + System.lineSeparator() +
+                        "2 81" + System.lineSeparator() +
+                        "3 81" + System.lineSeparator() +
+                        "4 --" + System.lineSeparator() +
+                        "5 !@" + System.lineSeparator() +
+                        "6 Al" + System.lineSeparator() +
+                        "7 Be" + System.lineSeparator() +
+                        "8 He" + System.lineSeparator() +
+                        "9 He" + System.lineSeparator();
         String actual1 = getFileContent(inputFile1.getPath());
         assertEquals("The files differ!", expected1, actual1);
     }
@@ -264,6 +264,8 @@ public class MyLibTest {
         assertEquals("The files differ!", expected1, actual1);
     }
 
+
+
     @Test
     public void fileprocessorTest9() throws Exception {
         String FILE4 =
@@ -296,6 +298,10 @@ public class MyLibTest {
         String actual1 = getFileContent(inputFile1.getPath());
         assertEquals("The files differ!", expected1, actual1);
     }
+
+
+
+
 
 
 
