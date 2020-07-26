@@ -96,9 +96,9 @@ public class FileProcessor implements FileProcessorInterface {
   @Override
   public void process() throws ProcessingException {
 
-    if(filepath == null || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
-        throw new ProcessingException("No filename provided");
-    }
+//    if(filepath == null || filepath.equals("") || filepath.equals("-1") || filepath.isEmpty()){
+//        throw new ProcessingException("No filename provided");
+//    }
 //    if(!keep.equals("") && !remove.equals("")){
 //        throw new ProcessingException("Options r and k are mutually exclusive");
 //    }
@@ -107,10 +107,12 @@ public class FileProcessor implements FileProcessorInterface {
     String fileName = splitFilePath[splitFilePath.length - 1];
     String[] splitFileName = fileName.split("\\.");
 
-    if(splitFileName.length < 2){
-        throw new ProcessingException("No filename provided");
+    if(splitFileName.length == 1){
+        throw new ProcessingException("Invalid filename");
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
         throw new ProcessingException("Cannot read file: No_such_file.txt");
+    } else if(splitFileName.length == 0){
+        throw new ProcessingException("No filename provided");
     }
 
 
