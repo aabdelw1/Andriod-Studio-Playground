@@ -173,10 +173,10 @@ public class FileProcessor implements FileProcessorInterface {
             String newLine = "";
 
             String linne2 = "  Spaces should not matter";
-            if(a.get(0).equals(linne2)) newLine = System.lineSeparator();
             if(lineCount1 == 1) newLine = System.lineSeparator();
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
+                if(line.equals(linne2)) newLine = System.lineSeparator();
                 boolean isPresent = line.indexOf(keep + newLine) != -1 ? true : false;
                 if (isPresent) {
                     tmpArray.add(line);
