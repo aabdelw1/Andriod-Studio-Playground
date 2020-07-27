@@ -163,8 +163,8 @@ public class FileProcessor implements FileProcessorInterface {
 
 
     //Keep function
-    if(false) {
-        if (!keep.equals("")) {
+    if(keepB) {
+//        if (!keep.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
                 boolean isPresent = line.indexOf(keep) != -1 ? true : false;
@@ -173,7 +173,7 @@ public class FileProcessor implements FileProcessorInterface {
                 }
             }
             a = tmpArray;
-        }
+//        }
         keepB = false;
     }
 
