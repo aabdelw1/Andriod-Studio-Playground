@@ -315,7 +315,7 @@ public class MyLibTest {
         fileProcessor.setFilepath(inputFile1.getPath());
         fileProcessor.setS(false);
         fileProcessor.setL(false);
-        fileProcessor.setKString("Spaces");
+        fileProcessor.setKString("Spaces  ");
         fileProcessor.setTInt(2);
 
 //        fileProcessor.setTInt(4);
