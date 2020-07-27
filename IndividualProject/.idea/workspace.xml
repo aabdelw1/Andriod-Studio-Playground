@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdf6fc85-fc33-48eb-891b-b1a27c57961b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,14 +16,14 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4993895">
+    <splitter split-orientation="horizontal" split-proportion="0.7557998">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="109" selection-start-line="109" selection-end-line="109" />
+                <state relative-caret-position="191">
+                  <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1330#1331#0" expanded="true" />
@@ -46,7 +45,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
+                <state relative-caret-position="463">
                   <caret line="322" column="29" lean-forward="true" selection-start-line="322" selection-start-column="29" selection-end-line="322" selection-end-column="29" />
                 </state>
               </provider>
@@ -278,12 +277,12 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.2032967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32865584" />
-      <window_info anchor="bottom" id="Terminal" weight="0.37033194" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.37033194" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32883817" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29979253" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29979253" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39955688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,15 +314,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fileprocessor/test/edu/gatech/seclass/fileprocessor/MyLibTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="463">
           <caret line="322" column="29" lean-forward="true" selection-start-line="322" selection-start-column="29" selection-end-line="322" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="191">
+          <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1330#1331#0" expanded="true" />
