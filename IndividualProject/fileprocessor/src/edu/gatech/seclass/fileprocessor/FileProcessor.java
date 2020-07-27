@@ -167,7 +167,7 @@ public class FileProcessor implements FileProcessorInterface {
         if (!keep.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
-                boolean isPresent = line.indexOf(keep) != -1 ? true : false;
+                boolean isPresent = line.indexOf(keep + System.lineSeparator()) != -1 ? true : false;
                 if (isPresent) {
                     tmpArray.add(line);
                 }
