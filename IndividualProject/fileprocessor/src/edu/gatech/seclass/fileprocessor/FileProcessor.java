@@ -95,8 +95,7 @@ public class FileProcessor implements FileProcessorInterface {
 
   @Override
   public void process() throws ProcessingException {
-
-
+      String fileContent = getFileContent(filepath);
 
     String[] splitFilePath = filepath.split("/");
     String fileName = splitFilePath[splitFilePath.length - 1];
@@ -109,15 +108,11 @@ public class FileProcessor implements FileProcessorInterface {
             throw new ProcessingException("Invalid filename");
         }
         else if(!splitFileName[0].equals("-1")) {
-            throw new ProcessingException("No filename provided");
+            throw new ProcessingException("No filename provided" + fileContent);
         }
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
         throw new ProcessingException("Cannot read file: No_such_file.txt");
     }
-
-
-
-      String fileContent = getFileContent(filepath);
 
      if(fileContent == null){
          throw new ProcessingException("No filename provided");
