@@ -245,11 +245,11 @@ public class FileProcessor implements FileProcessorInterface {
 //    }
 //    else {
         for (String line : a) {
-//            if (fileContent == null || fileContent.isEmpty()) {
-//                output = output + line;
-//            } else {
+            if(line.equals(a.get(a.size()-1)) && lineCount2 != arrayFile.length){
+                output = output + line;
+            } else {
                 output = output + line + System.lineSeparator();
-//            }
+            }
         }
 //    }
 //    output = output + "------------------------" + System.lineSeparator();
