@@ -169,7 +169,7 @@ public class FileProcessor implements FileProcessorInterface {
             String str2 = keep;
             str2 = str2.replace("\r\n", "\n");
             str2 = str2.replace("\r", "\n");
-            int lineCount1 = str.length() - str.replace("\n", "").length();
+            int lineCount1 = str.length() - str.replace("\n", "").length() + 1;
             String newLine = "";
 
             if(lineCount1 == 1) newLine = System.lineSeparator();
