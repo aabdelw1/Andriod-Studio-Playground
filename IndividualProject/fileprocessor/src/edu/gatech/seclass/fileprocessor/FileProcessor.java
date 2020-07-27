@@ -245,7 +245,7 @@ public class FileProcessor implements FileProcessorInterface {
 //    }
 //    else {
         for (String line : a) {
-            if(line.equals(a.get(a.size()-1)) && lineCount2 != arrayFile.length){
+            if(line.equals(a.get(a.size()-1)) && lineCount2 == arrayFile.length){
                 output = output + line;
             } else {
                 output = output + line + System.lineSeparator();
