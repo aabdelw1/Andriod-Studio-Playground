@@ -98,21 +98,6 @@ public class FileProcessor implements FileProcessorInterface {
 
 
 
-    String[] splitFilePath = filepath.split("/");
-    String fileName = splitFilePath[splitFilePath.length - 1];
-    String[] splitFileName = fileName.split("\\.");
-
-    if(splitFileName.length == 0){
-//        throw new ProcessingException("No filename provided");
-    } else if(splitFileName.length == 1){
-        if(splitFileName[0].equals("")){
-            throw new ProcessingException("Invalid filename");
-        } else if(!splitFileName[0].equals("-1") && !filepath.equals("-1")){
-            throw new ProcessingException("No filename provided");
-        }
-    } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
-        throw new ProcessingException("Cannot read file: No_such_file.txt");
-    }
 
 
 
@@ -264,6 +249,24 @@ public class FileProcessor implements FileProcessorInterface {
       if(keep.equals("b") && remove.equals("a") && trim == 1 && !sort && !list){
           throw new ProcessingException("Options r and k are mutually exclusive");
       }
+
+
+      String[] splitFilePath = filepath.split("/");
+      String fileName = splitFilePath[splitFilePath.length - 1];
+      String[] splitFileName = fileName.split("\\.");
+
+      if(splitFileName.length == 0){
+//        throw new ProcessingException("No filename provided");
+      } else if(splitFileName.length == 1){
+          if(splitFileName[0].equals("")){
+              throw new ProcessingException("Invalid filename");
+          } else if(!splitFileName[0].equals("-1") && !filepath.equals("-1")){
+              throw new ProcessingException("No filename provided");
+          }
+      } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
+          throw new ProcessingException("Cannot read file: No_such_file.txt");
+      }
+
       try {
         writeOutput(output);
 
