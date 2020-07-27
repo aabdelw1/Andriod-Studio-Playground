@@ -172,8 +172,10 @@ public class FileProcessor implements FileProcessorInterface {
             int lineCount1 = str.length() - str.replace("\n", "").length() + 1;
             String newLine = "";
 
-//            String linne2 = "  Spaces should not matter" + System.lineSeparator();
-            if(lineCount1 == 2) newLine = System.lineSeparator();
+            if(lineCount1 > 1)
+                for (int i=0; i < lineCount-1; i++){
+                    newLine = newLine + System.lineSeparator();
+                }
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
 //                if(line.equals(linne2)) newLine = System.lineSeparator();
