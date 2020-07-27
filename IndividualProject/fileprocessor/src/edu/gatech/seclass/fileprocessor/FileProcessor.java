@@ -107,7 +107,7 @@ public class FileProcessor implements FileProcessorInterface {
     } else if(splitFileName.length == 1){
         if(splitFileName[0].equals("")){
             throw new ProcessingException("Invalid filename");
-        } else if(!splitFileName[0].equals("-1") && !keep.equals("Spaces")){
+        } else if(!splitFileName[0].equals("-1")){
             throw new ProcessingException("No filename provided");
         }
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
