@@ -230,16 +230,28 @@ public class FileProcessor implements FileProcessorInterface {
         list = false;
   }
 
-
+    int lineCount2 = str.length() - str.replace("\n", "").length() + 1;
     //Convert Array to String
     String output = "";
-    for(String line : a){
-        if (fileContent == null || fileContent.isEmpty()) {
-            output = output + line;
-        } else {
-            output = output + line + System.lineSeparator();
+//    if(lineCount2 != arrayFile.length){
+//        for (String line : a) {
+//            if (fileContent == null || fileContent.isEmpty()) {
+//                output = output + line;
+//            } else {
+//                if()
+//                output = output + line + System.lineSeparator();
+//            }
+//        }
+//    }
+//    else {
+        for (String line : a) {
+//            if (fileContent == null || fileContent.isEmpty()) {
+//                output = output + line;
+//            } else {
+                output = output + line + System.lineSeparator();
+//            }
         }
-    }
+//    }
 //    output = output + "------------------------" + System.lineSeparator();
 //      output = output + "sort: " + sort + System.lineSeparator();
 //      output = output + "list: " + list + System.lineSeparator();
