@@ -22,8 +22,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="109" column="51" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+                <state relative-caret-position="156">
+                  <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1330#1331#0" expanded="true" />
@@ -321,8 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fileprocessor/src/edu/gatech/seclass/fileprocessor/FileProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="109" column="51" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+        <state relative-caret-position="156">
+          <caret line="106" column="41" lean-forward="true" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1330#1331#0" expanded="true" />
