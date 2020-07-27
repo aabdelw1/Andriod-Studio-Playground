@@ -165,9 +165,17 @@ public class FileProcessor implements FileProcessorInterface {
     //Keep function
     if(keepB) {
         if (!keep.equals("")) {
+
+            String str2 = keep;
+            str2 = str2.replace("\r\n", "\n");
+            str2 = str2.replace("\r", "\n");
+            int lineCount1 = str.length() - str.replace("\n", "").length();
+            String newLine = "";
+
+            if(lineCount1 == 1) newLine = System.lineSeparator();
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
-                boolean isPresent = line.indexOf(keep + System.lineSeparator()) != -1 ? true : false;
+                boolean isPresent = line.indexOf(keep + newLine) != -1 ? true : false;
                 if (isPresent) {
                     tmpArray.add(line);
                 }
