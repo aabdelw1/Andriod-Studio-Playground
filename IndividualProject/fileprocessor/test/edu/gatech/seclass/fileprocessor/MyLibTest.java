@@ -299,8 +299,32 @@ public class MyLibTest {
         assertEquals("The files differ!", expected1, actual1);
     }
 
+    @Test
+    public void fileprocessorTest100() throws Exception {
+        String FILE4 =
+                "Spaces should not matter" + System.lineSeparator() +
+                        "Spacesshould not matter" + System.lineSeparator() +
+                        "Spacesshouldnot matter" + System.lineSeparator() +
+                        "Spacesshouldnotmatter" + System.lineSeparator() +
+                        "Spaces shouldnot matter" + System.lineSeparator() +
+                        "abbb" + System.lineSeparator() +
+                        "a ddd" + System.lineSeparator() +
+                        "a ccc" + System.lineSeparator();
+        File inputFile1 = createInputFile(FILE4);
 
+        fileProcessor.setFilepath(inputFile1.getPath());
+        fileProcessor.setS(false);
+        fileProcessor.setL(false);
+        fileProcessor.setKString("Spaces");
+        fileProcessor.setTInt(2);
 
+//        fileProcessor.setTInt(4);
+        fileProcessor.process();
+        String expected1 = "";
+        String actual1 = getFileContent(inputFile1.getPath());
+        assertEquals("The files differ!", expected1, actual1);
+
+    }
 
 
 

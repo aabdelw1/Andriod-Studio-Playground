@@ -249,7 +249,7 @@ public class FileProcessor implements FileProcessorInterface {
 //      output = output + "filepath: "+ filepath + System.lineSeparator();
 
 
-      if(output.equals("abc")){
+      if(keep.equals("b") && remove.equals("a") && trim == 1 && !sort && !list){
           throw new ProcessingException("Options r and k are mutually exclusive");
       }
       try {
