@@ -107,7 +107,7 @@ public class FileProcessor implements FileProcessorInterface {
         if(splitFileName[0].equals("")){
             throw new ProcessingException("Invalid filename");
         }
-        else if(splitFileName[0].equals("-1")) {
+        else if(splitFileName[0].equals("-1") && fileContent == null) {
             throw new ProcessingException("No filename provided" );
         }
     } else if(splitFileName.length == 2 && !splitFileName[1].equals("tmp")){
@@ -164,7 +164,7 @@ public class FileProcessor implements FileProcessorInterface {
 
     //Keep function
     if(keepB) {
-//        if (!keep.equals("")) {
+        if (!keep.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
                 boolean isPresent = line.indexOf(keep) != -1 ? true : false;
@@ -173,7 +173,7 @@ public class FileProcessor implements FileProcessorInterface {
                 }
             }
             a = tmpArray;
-//        }
+        }
         keepB = false;
     }
 
