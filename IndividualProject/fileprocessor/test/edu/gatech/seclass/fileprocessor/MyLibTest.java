@@ -302,9 +302,9 @@ public class MyLibTest {
     @Test
     public void fileprocessorTest100() throws Exception {
         String FILE4 =
-                "Spaces should not matter" + System.lineSeparator() +
+                "        Spaces should not matter" + System.lineSeparator() +
                         "Spacesshould not matter" + System.lineSeparator() +
-                        "Spacesshouldnot matter" + System.lineSeparator() +
+                        "      Spacesshouldnot matter" + System.lineSeparator() +
                         "Spacesshouldnotmatter" + System.lineSeparator() +
                         "Spaces shouldnot matter" + System.lineSeparator() +
                         "abbb" + System.lineSeparator() +
