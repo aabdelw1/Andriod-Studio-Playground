@@ -163,7 +163,7 @@ public class FileProcessor implements FileProcessorInterface {
 
 
     //Keep function
-    if(keepB) {
+    if(false) {
         if (!keep.equals("")) {
             ArrayList<String> tmpArray = new ArrayList<String>();
             for (String line : a) {
@@ -241,7 +241,7 @@ public class FileProcessor implements FileProcessorInterface {
 //    }
 //    else {
         for (String line : a) {
-            if(line.equals(a.get(a.size()-1)) && lineCount2 != arrayFile.length){
+            if(line.equals(a.get(a.size()-1)) && lineCount2 == arrayFile.length){
                 output = output + line;
             } else {
                 output = output + line + System.lineSeparator();
